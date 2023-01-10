@@ -1,0 +1,52 @@
+[
+    {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+        "sku": "ps0000000001",
+        "name": "Bathroom refillable bottles",
+        "description": "Our bathroom bottles are the perfect way to add a touch of class, style and organisation to your bathroom.",
+        "price": 15.99,
+        "category": 1,
+        "image": "bathroom_cleaner.jpg"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+        "sku": "ps0000000002",
+        "name": "mini_jars",
+        "description": "Add elegance and style in your kitchen with our mini glass jars. ",
+        "price": 4.50,
+        "category": 2,
+    
+        "image": "storage_jar.jpg"
+      }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+          "sku": "ps0000000003",
+          "name": "stationery_basket",
+          "description": "Add elegance and style in your classroom or kidsroom. ",
+          "price": 5.50,
+          "category": 5,
+          "image": "pencils.jpg"
+        }
+      },
+      {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+          "sku": "ps0000000004",
+          "name": "fruit_basket",
+          "description": "Handcrafted basket organizer perfectly for fruits or accessories. ",
+          "price": 9.50,
+          "category": 5,
+          "image": "fruit_basket.jpg"
+        }
+      }
+    
+]
