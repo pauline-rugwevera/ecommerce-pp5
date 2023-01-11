@@ -142,7 +142,20 @@
           "category": 1,
           "image": "bathroom_spray_bottles.jpg"
         }
+      },
+      {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+          "sku": "ps00000000013",
+          "name": "Candle holder",
+          "description": "Add a touch of style to your home with this decorative candle holder. Made from gold and metal",
+          "price":11.99,
+          "category": 3,
+          "image": "candle.jpg"
+        }
       }
+     
     
 ]
 
