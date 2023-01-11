@@ -27,10 +27,11 @@
       "pk": 4,
       "model": "products.category",
       "fields": {
-        "name": "mason_jars",
-        "friendly_name": "mason "
+        "name": "new_arrivals",
+        "friendly_name": "New Arrivals"
       }
     },
+    
     {
       "pk": 5,
       "model": "products.category",
@@ -40,16 +41,8 @@
       }
     },
 
-    {
-        "pk": 6,
-        "model": "products.category",
-        "fields": {
-          "name": "new_arrivals",
-          "friendly_name": "New Arrivals"
-        }
-      },
       {
-        "pk": 7,
+        "pk": 6,
         "model": "products.category",
         "fields": {
           "name": "sale",
