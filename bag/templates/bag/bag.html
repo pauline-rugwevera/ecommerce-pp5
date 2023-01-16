@@ -25,20 +25,20 @@
         <div class="col">
             {% if bag_items %}
 
-         
+
             <div class="d-block d-md-none"></div>
             {% else %}
 
-                <p class="lead mb-5">Your Shopping bag is empty</p>
-                 <a href="{% url 'products' %}" class="btn btn-outline-black btn-lg "></a>
-                     <span class="icon">
-                          <i class="fas fa-chevron-left"></i>
-                    </span>
-                    <span class="text-uppercase">Keep Shopping</span>
+            <p class="lead mb-5">Your Shopping bag is empty</p>
+            <a href="{% url 'products' %}" class="btn btn-outline-black btn-lg "></a>
+            <span class="icon">
+                <i class="fas fa-chevron-left"></i>
+            </span>
+            <span class="text-uppercase">Keep Shopping</span>
             {% endif%}
 
         </div>
-           
+
     </div>
 
 
