@@ -3,7 +3,7 @@ from django.contrib import messages
 from .forms import OrderForm
 
 def checkout(request):
-    bag = session.get('bag', {})
+    bag = request.session.get('bag', {})
     if not bag:
         messages.error(request,"Nothing inside your bag")
         return redirect(reverse('products'))
