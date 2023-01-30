@@ -22,7 +22,7 @@ class OrderForm(forms.ModelForm):
             'town_or_city': 'Town or City',
             'street_address': 'Street Address',
             'county': 'County',
-            'country': 'Country',
+          
         }
 
         self.fields['full_name'].widget.attrs['autofocus'] = True
