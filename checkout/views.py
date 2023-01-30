@@ -50,13 +50,13 @@ def checkout(request):
         order_form = OrderForm(form_data)
 
         if order_form.is_valid():
-
             current_bag = bag_contents(request)
             order = order_form.save(commit=False)
             order.order_total = current_bag['total']
             order.delivery_cost = current_bag['delivery']
             order.grand_total = current_bag['grand_total']
             order.save()
+            
             for item_id, item_data in bag.items():
                 try:
                     product = Product.objects.get(id=item_id)

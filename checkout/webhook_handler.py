@@ -29,6 +29,7 @@ class StripeWH_Handler:
         pid = intent.id
         bag = intent.metadata.bag
         save_info = intent.metadata.save_info
+      
         # Get the charge object
         stripe_charge = stripe.Charge.retrieve(
             intent.latest_charge
@@ -36,6 +37,7 @@ class StripeWH_Handler:
 
         billing_details = stripe_charge.billing_details
         shipping_details = intent.shipping
+       
         grand_total = round(stripe_charge.amount / 100, 2)
 
         # Clean data in the shipping details
