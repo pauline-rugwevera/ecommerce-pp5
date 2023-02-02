@@ -50,13 +50,18 @@ def checkout(request):
             'county': request.POST['county'],
         }
         order_form = OrderForm(form_data)
-
         if order_form.is_valid():
-            current_bag = bag_contents(request)
             order = order_form.save(commit=False)
-            order.order_total = current_bag['total']
+            pid = request.POST.get('client_secret').split('_secret')[0]
+            order.stripe_pid = pid
+            order.original_bag = json.dumps(bag)
+            current_bag = bag_contents(request)
+       
             order.delivery_cost = current_bag['delivery']
+            order.order_total = current_bag['total']
             order.grand_total = current_bag['grand_total']
+
+
             order.save()
             
             for item_id, item_data in bag.items():
