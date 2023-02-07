@@ -140,7 +140,7 @@ def delete_product(request, product_id):
     A view for store managers to delete products
     """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, you are not authorized to add products!')
+        messages.error(request, 'Sorry, you are not authorized to perform this action!')
         return redirect(reverse('home'))
 
     product = get_object_or_404(Product, pk=product_id)
