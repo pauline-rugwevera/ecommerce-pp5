@@ -1,1 +1,1 @@
-web: gunicorn andwatch.wsgi:application
+web: gunicorn packandstash.wsgi:application
