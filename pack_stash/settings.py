@@ -143,7 +143,6 @@ else:
     }
 
 
-
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
@@ -187,7 +186,7 @@ if DEBUG:
     ]
 else:
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-    
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
@@ -229,5 +228,3 @@ DEFAULT_FROM_EMAIL = 'packandstash.example.com'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STANDARD_DELIVERY_PERCENTAGE = 0.5
-
-
