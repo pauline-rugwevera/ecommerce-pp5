@@ -3,14 +3,19 @@ html{
 }
 
 body{
-    background: url('/media/AdobeStock_166481836.jpeg') no-repeat center center fixed;
+    background: url('/media/AdobeStock_532525310.jpeg') no-repeat center center fixed;
     background-size: cover;
+    
+    
+   
     height: calc(100vh - 164px);
     font-family: 'Lato';
     color:black;
    
     
 }
+
+
 /* from Bulma */
 .icon {
     align-items: center;
