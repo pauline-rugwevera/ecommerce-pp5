@@ -3,7 +3,7 @@ html{
 }
 
 body{
-    background: url('https://packandstash.s3.eu-west-1.amazonaws.com/media/larger_canisters.jpeg') no-repeat center center fixed;
+    background: url('/static/images/larger_canisters.jpeg') no-repeat center center fixed;
    
     
     
@@ -17,6 +17,8 @@ body{
    
     
 }
+
+
 
 
 /* from Bulma */
