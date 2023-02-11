@@ -3,8 +3,8 @@ html{
 }
 
 body{
-    /* background: url('/media/larger_canisters.jpeg') no-repeat center center fixed; */
-    background: url('https://packandstash.s3.amazonaws.com/media/larger_canisters.jpeg') no-repeat center center fixed;
+    background: url('/media/larger_canisters.jpeg') no-repeat center center fixed;
+   
     
     
     background-size: cover;
