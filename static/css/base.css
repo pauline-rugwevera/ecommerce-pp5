@@ -3,20 +3,24 @@ html{
 }
 
 body{
-    background: url('/static/images/larger_canisters.jpeg') no-repeat center center fixed;
-   
     
-    
-    background-size: cover;
-    
-    
-   
     height: calc(100vh - 164px);
     font-family: 'Lato';
     color:black;
    
     
 }
+.hero-image {
+    background: url('/static/images/larger_canisters.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    flex: auto;
+}
+
+
+
+
+
 
 
 
