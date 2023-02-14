@@ -1,15 +1,19 @@
-html{
+html {
     height: 100%;
 }
 
-body{
-    
+body {
+
     height: calc(100vh - 164px);
     font-family: 'Lato';
-    color:black;
-   
+    color: black;
+    /* background: #000; */
     
+  
+
+
 }
+
 .hero-image {
     background: url('/static/images/larger_canisters.jpeg') no-repeat center center fixed;
     background-size: cover;
@@ -33,11 +37,13 @@ body{
     height: 1.5rem;
     width: 1.5rem;
 }
+
 .logo-font {
     text-transform: uppercase;
-    
-    
+
+
 }
+
 .main-logo-link {
     width: fit-content;
 }
@@ -48,7 +54,8 @@ body{
     color: #fff !important;
     min-width: 260px !important;
 }
-.btn-black{
+
+.btn-black {
     background: black;
     color: white;
 }
@@ -61,6 +68,7 @@ body{
     border-color: #000 !important;
     min-width: 260px !important;
 }
+
 .text-black {
     color: #000 !important;
 }
@@ -79,7 +87,7 @@ body{
 
 .btt-link,
 .update-link,
-.remove-item{
+.remove-item {
     cursor: pointer;
 }
 
@@ -89,7 +97,7 @@ input[name='q']::placeholder {
 }
 
 /* ....bootstrap toasts */
-.message-container{
+.message-container {
     position: fixed;
     top: 72px;
     right: 15px;
@@ -102,8 +110,9 @@ input[name='q']::placeholder {
     top: 0;
     left: 0;
     position: fixed;
-    background: white;
-   
+    /* background: black; */
+    
+
 }
 
 .custom-toast {
@@ -113,17 +122,19 @@ input[name='q']::placeholder {
 .toast-capper {
     height: 2px;
 }
+
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 4px solid transparent;
-    border-right: 4px solid transparent; 
+    border-right: 4px solid transparent;
     border-bottom: 10px solid black;
     position: absolute;
     top: -10px;
     right: 36px;
 }
+
 /* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
     border-bottom-color: #007bff !important;
@@ -167,7 +178,7 @@ input[name='q']::placeholder {
 /* -------------------------------- Allauth form formatting */
 
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; 
+    margin-top: 1.5rem;
     color: red;
 }
 
@@ -187,7 +198,7 @@ input[name='q']::placeholder {
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
     font-weight: 400;
-    color: black;
+    color: #fff;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -206,7 +217,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content a {
-    color: red;
+    color: #000#;
 }
 
 
@@ -242,20 +253,11 @@ input[name='q']::placeholder {
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
-}
-
-
-/* -------------------------------- Media Queries */
-
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
     .container {
         max-width: 80%;
     }
 }
+
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -271,6 +273,7 @@ input[name='q']::placeholder {
         padding-top: 164px;
     }
 }
+
 /* pad the top a bit when navbar is collapsed on mobile */
 
 @media (max-width: 991px) {
@@ -285,4 +288,26 @@ input[name='q']::placeholder {
     .display-4.logo-font.text-black {
         font-size: 2rem;
     }
+    .nav-link{
+        padding: 2.5px;
+    }
+    .nav-link i.fa-lg{
+        font-size: 16px;
+    }
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+    .btn.btn-outline-black.rounded-0,
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded-0.btn-lg,
+    .btn.btn-black.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
+
 }
