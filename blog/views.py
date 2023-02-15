@@ -1,3 +1,10 @@
 from django.shortcuts import render
+from . import views
+from .models import BlogPost, Comment
 
-# Create your views here.
+def post_list(request):
+    post_list = BlogPost.objects.all()
+
+    return render(request, 'blog/blog.html')
+
+
