@@ -28,10 +28,14 @@ body {
 
 .logo-font {
     text-transform: uppercase;
-
-
+    
+  
 }
 
+.title{
+    font-size: 20px;
+    font-family: 'Lato';
+}
 .main-logo-link {
     width: fit-content;
 }

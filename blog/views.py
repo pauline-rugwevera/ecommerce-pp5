@@ -1,10 +1,13 @@
 from django.shortcuts import render
+from django.views.generic import ListView
 from . import views
+
 from .models import BlogPost, Comment
 
-def post_list(request):
-    post_list = BlogPost.objects.all()
-
-    return render(request, 'blog/blog.html')
-
+class PostList(ListView):
+    """view to create the post on the blog"""
+    model = BlogPost
+    template_name = 'blog/blog.html'
+  
+    paginate_by = 6
 
