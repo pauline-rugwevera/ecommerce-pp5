@@ -29,10 +29,12 @@
             <div class="card h-100 border-0">
               
                 {% if post.image %}
+                <a href="{% url 'post_detail' post.slug %}">
 
                 <img class="card-img-top img-fluid" src="{{ post.image.url  }}" alt="{{ post.title }}">
                 </a>
                 {% else %}
+                <a href="{% url 'post_detail' post.slug %}">
               
                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.title }}">
                 </a>
