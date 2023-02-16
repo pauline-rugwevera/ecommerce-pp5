@@ -19,11 +19,7 @@ class PostList(ListView):
 def post_detail(request, slug):
     """renders post detail"""
     post = BlogPost.objects.filter(slug=slug).first()
-
-    
-    
     if request.method == "POST":
-
         body = request.POST.get('body', '')
        
     return render(request, "blog/post_detail.html",

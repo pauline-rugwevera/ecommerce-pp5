@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'blog',
     # other
     'crispy_forms',
+    'django_summernote',
     'storages',
 
 ]
@@ -235,3 +236,5 @@ else:
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STANDARD_DELIVERY_PERCENTAGE = 0.5
+
+
