@@ -37,7 +37,7 @@ def delete_comment(request, comment_id):
     """
     if not request.user.is_superuser:
         messages.error(
-            request, 'Sorry you are not authorized to perform that action!')
+            request, 'You are not authorized to perform this action!!')
         return redirect(
             reverse('blog'))
 
@@ -55,7 +55,7 @@ def editPost(request, slug):
     """
     if not request.user.is_superuser:
         messages.error(
-            request, 'You are not authorized to perfomrn this action!')
+            request, 'You are not authorized to perform this action!')
         return redirect(reverse('home'))
 
     post = get_object_or_404(BlogPost, slug=slug)
@@ -85,3 +85,18 @@ def editPost(request, slug):
     }
 
     return render(request, template, context)
+
+@login_required
+def deletePost(request, slug):
+    """
+    A view to delete posts
+    """
+    if not request.user.is_superuser:
+        messages.error(
+            request, 'You are not authorized to perform this action!!')
+        return redirect(reverse('home'))
+
+    post = get_object_or_404(BlogPost, slug=slug)
+    post.delete()
+    messages.success(request, 'The post was deleted!')
+    return redirect(reverse('blog'))
