@@ -22,8 +22,7 @@ def post_detail(request, slug):
     """renders post detail"""
     post = BlogPost.objects.filter(slug=slug).first()
     comments = Comment.objects.filter(blog_id=post)
-    # try
-
+   
     if request.method == "POST":
               
        user = request.user
@@ -37,3 +36,18 @@ def post_detail(request, slug):
                   {'post': post, 'comments': comments})
   
 
+@login_required
+def delete_comment(request, comment_id):
+    """
+    A view to delete comments 
+    """
+    if not request.user.is_superuser:
+        messages.error(
+            request, 'Sorry you are not authorized to perform that action!')
+        return redirect(
+            reverse('blog'))
+
+    comment = get_object_or_404(Comment, pk=comment_id)
+    comment.delete()
+    messages.success(request, 'The comment was removed!')
+    return redirect(reverse('blog'))
