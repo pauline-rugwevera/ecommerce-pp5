@@ -1,4 +1,6 @@
 from django.db import models
+from django.contrib.auth.models import User
+from django.utils.timezone import now
 
 class BlogPost(models.Model):
     title = models.CharField(max_length=250, unique=True)
@@ -15,15 +17,13 @@ class BlogPost(models.Model):
 
 
 class Comment(models.Model):
-    """model for comments on blog posts """
-    creator = models.CharField(max_length=80)
+    user = models.ForeignKey(User, default=1, on_delete=models.CASCADE)
     body = models.TextField()
     blog_id = models.ForeignKey(BlogPost, on_delete=models.CASCADE)
-    created_on = models.DateTimeField(auto_now_add=True)
-
+    dateTime = models.DateTimeField(default=now)
 
     class Meta:
-        ordering = ["created_on"]
+        ordering = ['-dateTime']
 
     def __str__(self):
-        return f"Comment {self.body} created by {self.creator}"
+        return self.user.username + " Comment: " + self.body

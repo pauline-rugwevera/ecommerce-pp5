@@ -2,6 +2,8 @@ from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
 from .models import BlogPost, Comment
 
+
+admin.site.register(Comment)
 @admin.register(BlogPost)
 class BlogPostAdmin(SummernoteModelAdmin):
     
@@ -12,8 +14,3 @@ class BlogPostAdmin(SummernoteModelAdmin):
     summernote_fields = ('body')
 
 
-@admin.register(Comment)
-class Comment(admin.ModelAdmin):
-    list_display = ('creator', 'body', 'blog_id', 'created_on',)
-    list_filter = ('created_on',)
-    search_fields = ('name', 'body')
