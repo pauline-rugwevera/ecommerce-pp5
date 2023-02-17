@@ -1,11 +1,13 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.urls import reverse_lazy
 from django.views.generic import ListView
+
 from django.contrib.auth.mixins import LoginRequiredMixin
 from . import views
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from .forms import PostForm
+from .forms import PostForm, AddPostForm
+
 
 from .models import BlogPost, Comment
 
@@ -27,8 +29,16 @@ def post_detail(request, slug):
        body = request.POST.get('body', '')
        comment = Comment(user=user, body=body, blog_id=post)
        comment.save()    
-    return render(request, "post_detail.html",
-                  {'post': post, 'comments': comments})
+
+
+    template = 'post_detail.html'
+    context = {
+        'post': post,
+        'comments': comments,
+    }
+
+    return render(request, template, context)
+            
 
 @login_required
 def delete_comment(request, comment_id):
@@ -76,7 +86,7 @@ def editPost(request, slug):
     else:
         postForm = PostForm(instance=post)
         messages.info(
-            request, f'You are currently editing: {post.slug}')
+            request, f'You are currently in editing mode: {post.slug}')
 
     template = 'edit_post.html'
     context = {
@@ -100,3 +110,42 @@ def deletePost(request, slug):
     post.delete()
     messages.success(request, 'The post was deleted!')
     return redirect(reverse('blog'))
+
+
+   
+@login_required
+def addPost(request, ):
+    """
+    A view to add blog post &
+  
+    """
+    if not request.user.is_superuser:
+        messages.error(
+            request, 'You are not authorized to perform this action!!')
+        return redirect(reverse('home'))
+
+    template = 'add_post.html'
+
+    post_form = AddPostForm(request.POST or None, request.FILES or None)
+
+    context = {
+        'post_form': post_form,
+    }
+
+    if request.method == "POST":
+        post_form = AddPostForm(request.POST, request.FILES)
+        if post_form.is_valid():
+            post_form = post_form.save(commit=False)
+
+            post_form.save()
+            messages.success(
+                request, 'A new blog has been successfully added')
+            return redirect('blog')
+        else:
+            messages.error(
+                request, 'An error occurred. \
+                    Please ensure the form is valid.')
+    else:
+        post_form = AddPostForm()
+
+    return render(request, template, context)
