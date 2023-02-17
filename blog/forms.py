@@ -1,14 +1,21 @@
 from django import forms
-from .models import Comment
+from django_summernote.widgets import SummernoteWidget
+from .models import BlogPost
 
 
-
-class CommentForm(forms.ModelForm):
+class PostForm(forms.ModelForm):
     """
-   add comment on a post
+    Form for adding a blog post
     """
     class Meta:
-        model = Comment
+        model = BlogPost
+        widgets = {
+            'body': SummernoteWidget()
+        }
         fields = [
+            'title',
+            'slug',
             'body',
+            'image',
         ]
+
