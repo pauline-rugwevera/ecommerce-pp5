@@ -14,7 +14,7 @@ from .models import BlogPost, Comment
 class PostList(ListView):
     """view to create the post on the blog"""
     model = BlogPost
-    template_name = 'blog.html'
+    template_name = 'blog/blog.html'
   
     paginate_by = 6
 
@@ -31,7 +31,7 @@ def post_detail(request, slug):
        comment.save()    
 
 
-    template = 'post_detail.html'
+    template = 'blog/post_detail.html'
     context = {
         'post': post,
         'comments': comments,
@@ -88,7 +88,7 @@ def editPost(request, slug):
         messages.info(
             request, f'You are currently in editing mode: {post.slug}')
 
-    template = 'edit_post.html'
+    template = 'blog/edit_post.html'
     context = {
         'postForm': postForm,
         'post': post,
@@ -124,7 +124,7 @@ def addPost(request, ):
             request, 'You are not authorized to perform this action!!')
         return redirect(reverse('home'))
 
-    template = 'add_post.html'
+    template = 'blog/add_post.html'
 
     post_form = AddPostForm(request.POST or None, request.FILES or None)
 

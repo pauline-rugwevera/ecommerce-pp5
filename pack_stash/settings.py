@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'profiles',
     'blog',
     'contactus',
+    'newsletter',
     # other
     'crispy_forms',
     'django_summernote',
