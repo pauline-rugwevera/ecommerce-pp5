@@ -78,7 +78,7 @@
                         <div class="card-footer bg-white pt-0 border-0 text-left">
                             <div class="row">
                                 <div class="col">
-                                    <p class="lead mb-0 text-left font-weight-bold">${{ product.price}}</p>
+                                    <p class="lead mb-0 text-left font-weight-bold">€{{ product.price}}</p>
                                     {% if product.category %}
                                     <p class="small mt-1 mb-0">
                                         <a class="text-muted"
@@ -89,10 +89,12 @@
                                     {% endif %}
                                     {% if request.user.is_superuser %}
                                     <p class="ml-3">
-                                        <a class="edit-color" href="{% url 'edit_product' product.id %}">Edit Product</a> | 
-                                        <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete Product</a> 
+                                        <a class="edit-color" href="{% url 'edit_product' product.id %}">Edit
+                                            Product</a> |
+                                        <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete
+                                            Product</a>
                                     </p>
-                                {% endif %}
+                                    {% endif %}
                                 </div>
                             </div>
 
@@ -136,36 +138,36 @@
 </div>
 {% endblock %}
 {% block postloadjs %}
-   {{ block.super }}
-    <script>
-        $('.btt-link').click(function(e) {
-            window.scrollTo(0,0);
-        });
-    </script>
+{{ block.super }}
+<script>
+    $('.btt-link').click(function (e) {
+        window.scrollTo(0, 0);
+    });
+</script>
 
 
-    <script>
-        $('#sort-selector').change(function() {
-            var selector = $(this);
-            var currentUrl = new URL(window.location);
+<script>
+    $('#sort-selector').change(function () {
+        var selector = $(this);
+        var currentUrl = new URL(window.location);
 
-            var selectedVal = selector.val();
-            if(selectedVal != "reset"){
-                let stringSplit = selectedVal.split("_");
-                let direction = stringSplit[(stringSplit.length) - 1];
-                stringSplit.pop();
-                let sort = stringSplit.join("_");
+        var selectedVal = selector.val();
+        if (selectedVal != "reset") {
+            let stringSplit = selectedVal.split("_");
+            let direction = stringSplit[(stringSplit.length) - 1];
+            stringSplit.pop();
+            let sort = stringSplit.join("_");
 
-                currentUrl.searchParams.set("sort", sort);
-                currentUrl.searchParams.set("direction", direction);
+            currentUrl.searchParams.set("sort", sort);
+            currentUrl.searchParams.set("direction", direction);
 
-                window.location.replace(currentUrl);
-            } else {
-                currentUrl.searchParams.delete("sort");
-                currentUrl.searchParams.delete("direction");
+            window.location.replace(currentUrl);
+        } else {
+            currentUrl.searchParams.delete("sort");
+            currentUrl.searchParams.delete("direction");
 
-                window.location.replace(currentUrl);
-            }
-        });
-    </script>
+            window.location.replace(currentUrl);
+        }
+    });
+</script>
 {% endblock %}

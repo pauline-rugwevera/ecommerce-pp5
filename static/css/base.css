@@ -7,6 +7,7 @@ body {
     height: calc(100vh - 164px);
     font-family: 'Lato';
     color: black;
+   
 }
 
 .hero-image {
@@ -15,7 +16,9 @@ body {
     height: 100%;
     flex: auto;
 }
-
+.header{
+   position: fixed;
+}
 
 /* from Bulma */
 .icon {
@@ -246,6 +249,23 @@ input[name='q']::placeholder {
     border-color: #dc3545;
     border-radius: 0;
 }
+/* footer */
+.newsletter{
+
+    font-size: 19px;
+    font-family: 'Lato', sans-serif;
+}
+.newsletter,
+.about,
+.footer-button,
+.privacy-policy{
+    color: #000;
+}
+
+
+.newsletter:hover,.about:hover,.privacy-policy:hover,.footer-button:hover{
+color: #000;
+}
 
 /* -------------------------------- Media Queries */
 
@@ -264,12 +284,14 @@ input[name='q']::placeholder {
         top: 0;
         right: 0;
         left: 0;
-        z-index: 1030;
+        z-index: 3030;
     }
+ 
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 160px;
     }
+    
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */

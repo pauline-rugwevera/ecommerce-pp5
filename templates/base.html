@@ -145,6 +145,7 @@
                 {% include 'includes/main-nav.html' %}
             </nav>
         </div>
+      
     </header>
 
     {% if messages %}
@@ -170,15 +171,18 @@
 
     {% block content %}
     {% endblock %}
-    <footer class="footer mt-auto py-3 text-center">
+   
+    
+    <footer class="footer mt-auto py-3 text-center fixed-bottom">
         <div>
-            <h3 class="newsletter">
-                <a href="" class="sign-up-footer"><strong>Sign up for our newsletter</strong></a>
+            <h3>
+                <a class="newsletter text-center" href=""><strong>Sign up for our newsletter</strong></a>
             </h3>
         </div>
+     
         <div>
             <p>
-                <a href="" class="m-2">About us</a>
+                <a class="about" href="" class="m-2">About us</a>
             </p>
         </div>
         <!-- socials -->
@@ -192,7 +196,7 @@
 
         <div>
             <small>
-                <a rel="nofollow" class="footer-button"
+                <a class = "privacy-policy" rel="nofollow" class="footer-button"
                     href=""
                     target="_blank" role="button">Privacy Policy</a>
             </small>
@@ -208,6 +212,7 @@
             </p>
         </div>
     </footer>
+    
 
 
     {% block postloadjs %}
