@@ -5,15 +5,48 @@
 
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
- <h1>about us
-    
- </h1>
+
+<div class="container h-100">
+    <div class="row h-100">
+        <div class="col-12 text-center">
+            <hr>
+            <h2 class="mb-4">About us</h2>
+            <hr>
+            <p class="justify-content-center">
+                Hello. Welcome to Pack and Stash. This is where we are all about home organization. <br>
+                My name is Pauline and I am the founder of Pack and Stash. I am very passionate about <br>
+                order and home organization with a little bit of classy. I also love cooking and before <br>
+                I knew it, I realized I needed to organize my pantry, including packing every other thing<br>
+                into its container as well as labelling. My life got much so easier. <br>
+                <br>
+
+                I loved how I transformed my entire home from organizing my pantry, labelling <br>
+                my spices as well as my son's toys. I then realized I can inspire others to organze <br>
+                their homes and spaces as well and thought of coming up with Pack and Stash <br>
+                <br>
+                Here at Pack and Stash, our goal is to produce storage and packing solutions to transform your <br>
+                home into GOALS. I hope you love our products as much as we do. <br>
+
+
+
+                Sincerely, <br>
+                <span>Pack and Stash</span>.
+            </p>
+        </div>
+        <div class="col-12 text-center">
+            <h4>
+                <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase">Shop
+                    Now</a>
+            </h4>
+        </div>
+    </div>
+</div>
 {% endblock %}
