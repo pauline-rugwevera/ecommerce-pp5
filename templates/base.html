@@ -59,7 +59,7 @@
 
 <body>
     <header class="container-fluid fixed-top">
-        <div id="topnav" class="row bg-black pt-lg-2 d-none d-lg-flex">
+        <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <h2 class="text-black logo-font my-0">Pack and Stash</h2>
@@ -145,8 +145,9 @@
                 {% include 'includes/main-nav.html' %}
             </nav>
         </div>
-      
+
     </header>
+
 
     {% if messages %}
     <div class="message-container">
@@ -171,48 +172,50 @@
 
     {% block content %}
     {% endblock %}
-   
-    
-    <footer class="footer mt-auto py-3 text-center fixed-bottom">
-        <div>
-            <h3>
-                <a class="newsletter text-center" href="{% url 'newsletter' %}"><strong>Sign up for our newsletter</strong></a>
-            </h3>
-        </div>
-     
-        <div>
-            <p>
+
+    <div class="text-center footer sticky-bottom">
+        <footer class=" ">
+            <div>
+                <h3>
+                    <a class="newsletter text-center" href="{% url 'newsletter' %}"><strong>Sign up for our
+                            newsletter</strong></a>
+                </h3>
+            </div>
+
+            <div>
+                <!-- <p> -->
                 <a class="about" href="{% url 'about_us' %}" class="m-2">About us</a>
-            </p>
-        </div>
-        <!-- socials -->
-        <div>
-            <a class="m-2 footer-button" rel="nofollow" href="https://www.instagram.com/" role="button" target="_blank"
-                aria-label="instagram"><i class="fab fa-instagram"></i></a>
-
-            <a class="m-2 footer-button" rel="nofollow" href="https://www.facebook.com/profile.php?id=100090536471512" role="button" target="_blank" aria-label="facebook"><i
-                    class="fab fa-facebook"></i></a>
-        </div>
-
-        <div>
-            <small>
-                <a class = "privacy-policy" rel="nofollow"
+                <!-- </p> -->
+                <!-- <small> -->
+                <a class="privacy-policy" rel="nofollow"
                     href="https://www.privacypolicygenerator.info/live.php?token=570h84BK7hpgjt9tVMrFxzenvC8iqQmW"
                     target="_blank" role="button">Privacy Policy</a>
-            </small>
-        </div>
-        <!-- Copyright -->
-        <div>
-            <p>Copyright
-                <span>&copy;</span>
-                <script>
-                    document.write(new Date().getFullYear());
-                </script>
-                All rights reserved | This website was made for educational purposes only
-            </p>
-        </div>
-    </footer>
-    
+                <!-- </small> -->
+            </div>
+            <!-- socials -->
+            <div>
+                <a class="m-2 footer-button" rel="nofollow" href="https://www.instagram.com/" role="button"
+                    target="_blank" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+
+                <a class="m-2 footer-button" rel="nofollow"
+                    href="https://www.facebook.com/profile.php?id=100090536471512" role="button" target="_blank"
+                    aria-label="facebook"><i class="fab fa-facebook"></i></a>
+            </div>
+
+
+            <!-- Copyright -->
+            <div>
+                <p>Copyright
+                    <span>&copy;</span>
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    All rights reserved | This website was made for educational purposes only
+                </p>
+            </div>
+        </footer>
+    </div>
+
 
 
     {% block postloadjs %}

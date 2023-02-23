@@ -9,13 +9,29 @@ body {
     color: black;
    
 }
+.hero-text{
+    background-color: #3A98B9;
+  font-size: 3rem;
+}
+
 
 .hero-image {
-    background: url('/static/images/larger_canisters.jpeg') no-repeat center center fixed;
+    background: url('/static/images/AdobeStock_394740579 (1) (1) (1).jpeg') no-repeat center center fixed;
     background-size: cover;
-    height: 100%;
+    height: 80%;
     flex: auto;
-}
+  
+
+
+    width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  /* height: 50%; */
+    overflow: hidden;
+  
+} 
+
 .header{
    position: fixed;
 }
@@ -31,6 +47,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+   
     
   
 }
@@ -251,6 +268,14 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 /* footer */
+.footer{
+    width: 100%;
+    display: inline-block;
+    position: relative;
+   
+    padding: 0;
+    border-top: 4px solid #3A98B9;
+}
 .newsletter{
 
     font-size: 19px;

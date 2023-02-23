@@ -1,161 +1,166 @@
 [
-    {
-      "pk": 1,
-      "model": "products.product",
-      "fields": {
-        "sku": "ps0000000001",
-        "name": "Mason jars",
-        "description": "the jars creates an airtight seal with the lift-off brushed aluminum lid to lock in freshness",
-        "price": 15.99,
-        "category": 2,
-        "image": "mason_jars.jpg"
-      }
-    },
-    {
-      "pk": 2,
-      "model": "products.product",
-      "fields": {
-        "sku": "ps0000000002",
-        "name": "Palm link basket",
-        "description": "Add elegance and style in your kitchen with our all in one basket. ",
-        "price": 5.50,
-        "category": 5,
-        "image": "all_basket.jpg"
-      }
-    },
-    {
-        "pk": 3,
-        "model": "products.product",
-        "fields": {
-          "sku": "ps0000000003",
-          "name": "Sea grass basket",
-          "description": "The basket is handwoven and perfectly fit for organizing any and style in any room",
-          "price": 10.50,
-          "category": 5,
-          "image": "all_in_one_basket.jpg"
-        }
-      },
-      {
-        "pk": 4,
-        "model": "products.product",
-        "fields": {
-          "sku": "ps0000000004",
-          "name": "Bamboo mini canisters",
-          "description": "A glass jar with a bamboo lid. It adds that classy to your pantry ",
-          "price": 9.50,
-          "category": 2,
-          "image": "bamboo_jars.jpg"
-        }
-      },
-      {
-        "pk": 5,
-        "model": "products.product",
-        "fields": {
-          "sku": "ps0000000005",
-          "name": "Bamboo milk bottle",
-          "description": "A glass jar with a bamboo lid. It adds that classy to your pantry ",
-          "price": 9.50,
-          "category": 2,
-          "image": "bamboo_milk_bottle.jpg"
-        }
-      },
-      {
-        "pk": 6,
-        "model": "products.product",
-        "fields": {
-          "sku": "ps0000000006",
-          "name": "Modern weave basket",
-          "description": "All rounder handwoven basket that fit either in your pantry or bathrooms ",
-          "price": 30.50,
-          "category": 5,
-          "image": "bamboo_storage_baskets.jpg"
-        }
-      },
-      {
-        "pk": 7,
-        "model": "products.product",
-        "fields": {
-          "sku": "ps0000000007",
-          "name": "Dispenser",
-          "description": "All rounder pantry storage. Perfect solution for short grains or cereals ",
-          "price": 49.99,
-          "category": 4,
-          "image": "cereal_dispenser.jpg"
-        }
-      },
-      {
-        "pk": 8,
-        "model": "products.product",
-        "fields": {
-          "sku": "ps0000000008",
-          "name": "Harvest basket",
-          "description": "Medium handwoven all rounder basket. It is open, airy style and of a remarkable strength ",
-          "price": 20.50,
-          "category": 5,
-          "image": "fruit_basket.jpg"
-        }
-      },
-      {
-        "pk": 9,
-        "model": "products.product",
-        "fields": {
-          "sku": "ps0000000009",
-          "name": "Gold basket",
-          "description": "Made of gold, this is a perfect solution for kids stationery organization ",
-          "price": 10.50,
-          "category": 5,
-          "image": "gold_basket.jpg"
-        }
-      },
-      {
-        "pk": 10,
-        "model": "products.product",
-        "fields": {
-          "sku": "ps00000000010",
-          "name": "Utility basket",
-          "description": "Handwoven large basket that can organize those toys or towels and kids blankets ",
-          "price": 45.99,
-          "category": 5,
-          "image": "large_basket.jpg"
-        }
-      },
-      {
-        "pk": 11,
-        "model": "products.product",
-        "fields": {
-          "sku": "ps00000000011",
-          "name": "Mini silver canisters",
-          "description": "Utilize the vibrant colors of food to and bring a touch of color to your kitchen while staying organized with this 2-Piece Canister Set",
-          "price": 45.99,
-          "category": 2,
-          "image": "silver_jars.jpg"
-        }
-      },
-      {
-        "pk": 12,
-        "model": "products.product",
-        "fields": {
-          "sku": "ps00000000012",
-          "name": "Bathroom refillable bottles",
-          "description": "",
-          "price": 45.99,
-          "category": 1,
-          "image": "bathroom_spray_bottles.jpg"
-        }
-      },
-      {
-        "pk": 13,
-        "model": "products.product",
-        "fields": {
-          "sku": "ps00000000013",
-          "name": "Candle holder",
-          "description": "Add a touch of style to your home with this decorative candle holder. Made from gold and metal",
-          "price":11.99,
-          "category": 3,
-          "image": "candle.jpg"
-        }
-      }
-     
-    
-]
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "ps0000000001",
+      "name": "Large pantry jars",
+      "description": "Made of food-grade high borosilicate glass, high boron glass is non-toxic and lead-free,100% no harm to human. Combined with lid, creating an ideal airtight environment for every thing you need!",
+      "price": 15.99,
+      "category": 2,
+      "image": "pantry_organizers.jpg"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "ps0000000002",
+      "name": "Bamboo mini canisters",
+      "description": "Whether it is flour, coffee or meat sauce, this glass jar with a tight-fitting bamboo lid keeps the contents fresh and preserves both aroma and taste. So decorative that you happily keep it out in the open. ",
+      "price": 9.50,
+      "category": 2,
+      "image": "bamboo_jars.jpg"
+    }
+  },
 
+
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "ps0000000003",
+      "name": "Bamboo milk bottle",
+      "description": "ECO-FRIENDLY: High-quality premium borosilicate is strong and durable, non-toxic, lead free and plastic free. ",
+      "price": 9.50,
+      "category": 4,
+      "image": "bamboo_milk_bottle.jpg"
+    }
+  },
+
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "ps0000000004",
+      "name": "White bathroom organizers",
+      "description": "Clear storage organizers, very functional and decorative,not just for the bathroom, also perfect in the kitchen or living room",
+      "price": 10.50,
+      "category": 5,
+      "image": "bathroom_organizers.jpg"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "ps0000000005",
+      "name": "Mini pantry canisters",
+      "description": "Smart air tight jars/canisters, great additional storage for your kitchen .Good size and very light, Easy to clean and good material. They are also 100% dishwasher proof. ",
+      "price": 5.50,
+      "category": 2,
+      "image": "silver_jars.jpg"
+    }
+  },
+
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "ps0000000006",
+      "name": "Modern weave basket",
+      "description": "MULTI-PURPOSE STORAGE: Stylishly designed handwoven wicker baskets add convenient storage to any space in your home, perfect for storing bathroom accessories, paperwork, clothing, accessories & more.",
+      "price": 30.50,
+      "category": 5,
+      "image": "bamboo_storage_baskets.jpg"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "ps0000000007",
+      "name": "Dispenser",
+      "description": "Provides convenient storage and portion control of dry foods Designed to preserve freshness and flavor",
+      "price": 49.99,
+      "category": 4,
+      "image": "cereal_dispenser.jpg"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "ps0000000008",
+      "name": "Harvest basket",
+      "description": "Beautiful and traditional rustic willow garden trug in medium.Made by hand from 100% natural materials which are all sustainably source. The entire trug is made from one entire willow branch",
+      "price": 20.50,
+      "category": 5,
+      "image": "fruit_basket.jpg"
+    }
+  },
+
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "ps00000000009",
+      "name": "Utility basket",
+      "description": "Handwoven large basket that can organize those toys or towels and kids blankets ",
+      "price": 45.99,
+      "category": 5,
+      "image": "large_basket.jpg"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "ps00000000010",
+      "name": "Mason jars",
+      "description": "Ideal for homemade jams, pickles, chutneys and preserves",
+      "price": 45.99,
+      "category": 2,
+      "image": "mason_jars.jpg"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": "ps00000000011",
+      "name": "Bathroom refillable bottles",
+      "description": "These bottles are a beautiful and eco friendly choice to reduce your plastic use at home.",
+      "price": 45.99,
+      "category": 1,
+      "image": "bathroom_spray_bottles.jpg"
+    }
+  },
+  
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "ps00000000012",
+      "name": "Accrylic containers",
+      "description": "Durable and airtight. The lid keep out air very well, creating an airtight and moisture proof environment to store what you want. Ideal for storing cookie, candy, flour etc.",
+      "price": 10.50,
+      "category": 5,
+      "image": "accrylic_organizers.jpg"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "sku": "ps00000000013",
+      "name": "Square basket",
+      "description": "This is much nicer than the many plain all white decorative baskets.You will be proud to feature this stylish round woven basket in your home and even taking it with you to the laundry or for bathroom storage.",
+      "price": 11.99,
+      "category": 5,
+      "image": "square_white_basket.jpg"
+    }
+  }
+
+
+]

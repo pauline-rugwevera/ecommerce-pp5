@@ -18,19 +18,25 @@ class PostList(ListView):
   
     paginate_by = 6
 
+
 def post_detail(request, slug):
-    """renders post detail"""
+    """ View to show a particular blog post """
+
     post = BlogPost.objects.filter(slug=slug).first()
     comments = Comment.objects.filter(blog_id=post)
-   
-    if request.method == "POST":
-              
-       user = request.user
-       body = request.POST.get('body', '')
-       comment = Comment(user=user, body=body, blog_id=post)
-       comment.save()    
+    
 
 
+    if request.method == 'POST':
+        if not request.user.is_authenticated:
+            messages.error(request, 'Action not allowed')
+            return redirect(reverse('home'))
+        else:
+            user = request.user
+            body = request.POST.get('body', '')
+            comment = Comment(user=user, body=body, blog_id=post)
+            comment.save()    
+    
     template = 'blog/post_detail.html'
     context = {
         'post': post,
@@ -38,6 +44,9 @@ def post_detail(request, slug):
     }
 
     return render(request, template, context)
+        
+
+
             
 
 @login_required
