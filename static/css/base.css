@@ -15,8 +15,9 @@ body {
 }
 
 
+
 .hero-image {
-    background: url('/static/images/AdobeStock_394740579 (1) (1) (1).jpeg') no-repeat center center fixed;
+    background: url('/static/images/hero.jpeg') no-repeat center center fixed;
     background-size: cover;
     height: 80%;
     flex: auto;
@@ -35,7 +36,10 @@ body {
 .header{
    position: fixed;
 }
-
+p{
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
 /* from Bulma */
 .icon {
     align-items: center;

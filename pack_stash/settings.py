@@ -272,6 +272,7 @@ SUMMERNOTE_CONFIG = {
             ['table', ['table']],
             ['view', ['fullscreen', 'help']],
         ],
+       
     },
     # # pointing summernote at css file for custom rule implementation
     # # kept seperate as other rules already loading into page

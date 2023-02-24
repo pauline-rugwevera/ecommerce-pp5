@@ -80,11 +80,11 @@
     "model": "products.product",
     "fields": {
       "sku": "ps0000000007",
-      "name": "Dispenser",
+      "name": "Toy organizers",
       "description": "Provides convenient storage and portion control of dry foods Designed to preserve freshness and flavor",
       "price": 49.99,
       "category": 4,
-      "image": "cereal_dispenser.jpg"
+      "image": "toy_organizers.jpeg"
     }
   },
   {
