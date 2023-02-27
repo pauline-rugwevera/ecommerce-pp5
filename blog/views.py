@@ -82,7 +82,7 @@ def editPost(request, slug):
         postForm = PostForm(request.POST, request.FILES, instance=post)
         if postForm.is_valid():
 
-            instance = postForm.save(commit=False)
+            # instance = postForm.save(commit=False)
           
             postForm.save()
             messages.success(request, 'Successfully updated the post!')
@@ -156,5 +156,5 @@ def addPost(request, ):
         form = AddPostForm()
  
     return render(request, template, context)
-#    tester view
+
 

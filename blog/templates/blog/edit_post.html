@@ -26,10 +26,14 @@
         <div class="col-12 col-md-6">
             <form action="{% url 'edit_post' post.slug %}" method="POST" style="margin-top: 1.3em;" enctype="multipart/form-data">
                 {% csrf_token %}
-                    {{ postForm.title|as_crispy_field }}
-                    {{ postForm.slug|as_crispy_field }}
-                    {{ postForm.body|as_crispy_field|safe }}
-                    {{ postForm.image|as_crispy_field }}
+            
+                {% for field in postForm %}
+                    {% if field.name != 'image' %}
+                        {{ field | as_crispy_field }}
+                    {% else %}
+                        {{ field }}
+                    {% endif %}
+                {% endfor %}
                    
                 <div class="col">
                     <button type="submit" class="btn btn-black">Save</button>
