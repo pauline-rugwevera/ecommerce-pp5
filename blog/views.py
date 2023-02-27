@@ -120,33 +120,31 @@ def deletePost(request, slug):
     messages.success(request, 'The post was deleted!')
     return redirect(reverse('blog'))
 
-
-   
 @login_required
 def addPost(request, ):
+
     """
     A view to add blog post &
-  
+   
     """
     if not request.user.is_superuser:
         messages.error(
-            request, 'You are not authorized to perform this action!!')
+             request, 'You are not authorized to perform this action!!')
         return redirect(reverse('home'))
-
+ 
     template = 'blog/add_post.html'
-
-    post_form = AddPostForm(request.POST or None, request.FILES or None)
-
+ 
+    form = AddPostForm(request.POST or None, request.FILES or None)
+ 
     context = {
-        'post_form': post_form,
-    }
-
+         'form': form,
+     }
+ 
     if request.method == "POST":
-        post_form = AddPostForm(request.POST, request.FILES)
-        if post_form.is_valid():
-            post_form = post_form.save(commit=False)
-
-            post_form.save()
+        form = AddPostForm(request.POST or None, request.FILES or None)
+        if form.is_valid():
+            form = form.save(commit=False)
+            form.save()
             messages.success(
                 request, 'A new blog has been successfully added')
             return redirect('blog')
@@ -155,6 +153,8 @@ def addPost(request, ):
                 request, 'An error occurred. \
                     Please ensure the form is valid.')
     else:
-        post_form = AddPostForm()
-
+        form = AddPostForm()
+ 
     return render(request, template, context)
+#    tester view
+

@@ -19,6 +19,8 @@ class PostForm(forms.ModelForm):
             'body',
             'image',
         ]
+    image = forms.ImageField(
+        label='Image', required=False, widget=CustomClearableFileInput)
 
 class AddPostForm(forms.ModelForm):
     """
@@ -29,6 +31,7 @@ class AddPostForm(forms.ModelForm):
         widgets = {
             'body': SummernoteWidget()
         }
+       
   
         fields = [
             'title',
