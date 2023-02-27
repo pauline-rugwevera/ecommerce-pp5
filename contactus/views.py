@@ -15,10 +15,11 @@ def contactUs(request):
             form.save()
             messages.success(request, 'Thank you for your message!')
    
-    else:
-        form = ContactForm()
-        messages.warning(request, 'Message not sent. Please try again.')
-
+        else:
+            form = ContactForm()
+            messages.warning(request, 'Message not sent. Please try again.')
+  
+       
     form = ContactForm()
     template = 'contactus/contact_us.html'
     context = {
