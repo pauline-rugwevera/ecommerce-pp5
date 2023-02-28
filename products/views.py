@@ -3,11 +3,8 @@ from django.contrib import messages
 from django.db.models import Q
 from django.contrib.auth.decorators import login_required
 from django.db.models.functions import Lower
-
 from .models import Product, Category
 from .forms import ProductForm
-
-# Create your views here.
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
@@ -40,15 +37,9 @@ def all_products(request):
 
         if 'q' in request.GET:
             query = request.GET['q']
-            print(query)
             if not query:
-                print('not found')
-              
-         
                 messages.error(request, "You didn't enter any search criteria")
                 return redirect(reverse('products'))
-           
-            
             queries = (Q(name__icontains=query) |
                        Q(description__icontains=query))
             products = products.filter(queries)
@@ -88,7 +79,6 @@ def add_product(request):
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
-          
             product = form.save()
             messages.success(
                 request, 'You have successfully added a new product!')
@@ -153,6 +143,3 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'The product was deleted!')
     return redirect(reverse('products'))
-
-
-
