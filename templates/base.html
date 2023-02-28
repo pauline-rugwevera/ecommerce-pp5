@@ -173,9 +173,12 @@
 
     {% block content %}
     {% endblock %}
+ 
+   
+    
 
-    <div class="text-center footer sticky-bottom">
-        <footer class=" ">
+    <div class="text-center footer fixed-bottom">
+        <footer>
             <div>
                 <h3>
                     <a class="newsletter text-center" href="{% url 'newsletter' %}"><strong>Sign up for our
@@ -184,14 +187,14 @@
             </div>
 
             <div>
-                <!-- <p> -->
+             
                 <a class="about" href="{% url 'about_us' %}" class="m-2">About us</a>
-                <!-- </p> -->
-                <!-- <small> -->
+          
+             
                 <a class="privacy-policy" rel="nofollow"
                     href="https://www.privacypolicygenerator.info/live.php?token=570h84BK7hpgjt9tVMrFxzenvC8iqQmW"
                     target="_blank" role="button">Privacy Policy</a>
-                <!-- </small> -->
+              
             </div>
             <!-- socials -->
             <div>
