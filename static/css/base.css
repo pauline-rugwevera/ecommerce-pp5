@@ -14,8 +14,9 @@ body {
     float: right;
 }
 .hero-text{
-    background-color: #3A98B9;
+  background-color: #3A98B9;
   font-size: 3rem;
+  
 }
 
 
@@ -373,3 +374,11 @@ color: #000;
 
 }
 
+@media (max-width:320px) {
+    .hero-text{
+        font-size: 25px;
+        
+
+    } 
+    
+}
