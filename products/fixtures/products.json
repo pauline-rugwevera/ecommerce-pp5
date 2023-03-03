@@ -119,8 +119,8 @@
       "sku": "ps00000000010",
       "name": "Mason jars",
       "description": "Ideal for storing homemade jams, pickles, chutneys and preserves",
-      "price": 45.99,
-      "category": 2,
+      "price": 9.99,
+      "category": 3,
       "image": "mason_jars.jpg"
     }
   },
@@ -131,7 +131,7 @@
       "sku": "ps00000000011",
       "name": "Bathroom refillable bottles",
       "description": "These bottles are a beautiful and eco friendly choice to reduce your plastic use at home.",
-      "price": 45.99,
+      "price": 27.99,
       "category": 1,
       "image": "bathroom_spray_bottles.jpg"
     }
