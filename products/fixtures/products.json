@@ -5,7 +5,7 @@
     "fields": {
       "sku": "ps0000000001",
       "name": "Large pantry jars",
-      "description": "Made of food-grade high borosilicate glass, high boron glass is non-toxic and lead-free,100% no harm to human. Combined with lid, creating an ideal airtight environment for every thing you need!",
+      "description": "Made of food-grade high borosilicate glass, high boron glass is non-toxic and lead-free,100% no harm to human. Combined with lid, creating an ideal airtight environment, perfect for organizing every thing you need!",
       "price": 15.99,
       "category": 2,
       "image": "pantry_organizers.jpg"
@@ -17,7 +17,7 @@
     "fields": {
       "sku": "ps0000000002",
       "name": "Bamboo mini canisters",
-      "description": "Whether it is flour, coffee or meat sauce, this glass jar with a tight-fitting bamboo lid keeps the contents fresh and preserves both aroma and taste. So decorative that you happily keep it out in the open. ",
+      "description": "Whether it is flour, coffee or meat sauce, this glass jar with a tight-fitting bamboo lid keeps the contents fresh and preserves both aroma and taste. So decorative and perfect for pantry organization as well as out in the open. ",
       "price": 9.50,
       "category": 2,
       "image": "bamboo_jars.jpg"
@@ -44,7 +44,7 @@
     "fields": {
       "sku": "ps0000000004",
       "name": "White bathroom organizers",
-      "description": "Clear storage organizers, very functional and decorative,not just for the bathroom, also perfect in the kitchen or living room",
+      "description": "Clear storage organizers, very functional and decorative,not just for the bathroom organization, also perfect in the kitchen or living room",
       "price": 10.50,
       "category": 5,
       "image": "bathroom_organizers.jpg"
@@ -81,7 +81,7 @@
     "fields": {
       "sku": "ps0000000007",
       "name": "Toy organizers",
-      "description": "Provides convenient storage and portion control of dry foods Designed to preserve freshness and flavor",
+      "description": "Provides convenient storage and organization for the kids toys and items ",
       "price": 49.99,
       "category": 4,
       "image": "toy_organizers.jpeg"
@@ -118,7 +118,7 @@
     "fields": {
       "sku": "ps00000000010",
       "name": "Mason jars",
-      "description": "Ideal for homemade jams, pickles, chutneys and preserves",
+      "description": "Ideal for storing homemade jams, pickles, chutneys and preserves",
       "price": 45.99,
       "category": 2,
       "image": "mason_jars.jpg"
@@ -143,7 +143,7 @@
     "fields": {
       "sku": "ps00000000012",
       "name": "Accrylic containers",
-      "description": "Durable and airtight. The lid keep out air very well, creating an airtight and moisture proof environment to store what you want. Ideal for storing cookie, candy, flour etc.",
+      "description": "Durable and airtight. The lid keep out air very well, creating an airtight and moisture proof environment to store what you want and easier to organize yor pantry. Ideal for storing cookie, candy, flour etc.",
       "price": 10.50,
       "category": 5,
       "image": "accrylic_organizers.jpg"
