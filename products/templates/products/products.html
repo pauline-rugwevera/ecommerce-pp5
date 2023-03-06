@@ -90,9 +90,9 @@
                                     {% if request.user.is_superuser %}
                                     <p class="ml-3">
                                         <a class="edit-color" href="{% url 'edit_product' product.id %}">Edit
-                                            Product</a> |
+                                        </a> |
                                         <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete
-                                            Product</a>
+                                        </a>
                                     </p>
                                     {% endif %}
                                 </div>
@@ -129,7 +129,6 @@
 
     </div>
 
-
 </div>
 <div class="btt-button shadow-sm rounded-0 border border-black">
     <a class="btt-link d-flex h-100">
@@ -144,7 +143,6 @@
         window.scrollTo(0, 0);
     });
 </script>
-
 
 <script>
     $('#sort-selector').change(function () {
