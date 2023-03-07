@@ -4,7 +4,7 @@ from django.contrib import messages
 
 def subscribe(request):
     """
-    A Viewto handle email when user on submit 
+    A View to handle email when user submit
     form
     """
     if request.method == "POST":
