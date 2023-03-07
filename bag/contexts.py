@@ -3,6 +3,7 @@ from decimal import Decimal
 from django.shortcuts import get_object_or_404
 from products.models import Product
 
+
 def bag_contents(request):
     bag_items = []
     total = 0
@@ -18,17 +19,11 @@ def bag_contents(request):
             'quantity': quantity,
             'product': product,
         })
-
-
     delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
-     
-    
     grand_total = total+delivery
 
-
-
     context = {
-        
+
         'bag_items': bag_items,
         'total': total,
         'product_count': product_count,

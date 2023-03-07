@@ -9,4 +9,3 @@ urlpatterns = [
    path('remove/<item_id>/', views.remove_from_bag,
         name='remove_from_bag'),
 ]
-
