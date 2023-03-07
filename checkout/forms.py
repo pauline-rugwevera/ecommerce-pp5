@@ -1,6 +1,7 @@
 from django import forms
 from .models import Order
 
+
 class OrderForm(forms.ModelForm):
     class Meta:
         model = Order
@@ -22,7 +23,6 @@ class OrderForm(forms.ModelForm):
             'town_or_city': 'Town or City',
             'street_address': 'Street Address',
             'county': 'County',
-          
         }
 
         self.fields['full_name'].widget.attrs['autofocus'] = True

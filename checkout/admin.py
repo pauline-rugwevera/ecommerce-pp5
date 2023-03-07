@@ -22,7 +22,7 @@ class OrderAdmin(admin.ModelAdmin):
               'email', 'phone_number', 'country',
               'postcode', 'town_or_city', 'street_address',
               'county', 'delivery_cost', 'order_total',
-              'grand_total', 'original_bag', 
+              'grand_total', 'original_bag',
               'stripe_pid')
 
     list_display = ('order_number', 'date', 'full_name',
@@ -32,5 +32,3 @@ class OrderAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Order, OrderAdmin)
-
-    
