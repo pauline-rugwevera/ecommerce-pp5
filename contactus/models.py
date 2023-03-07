@@ -1,7 +1,7 @@
 from django.db import models
 
+
 class ContactUs(models.Model):
-    
     class Meta:
         verbose_name_plural = 'Contact Us'
 
