@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.utils.timezone import now
 
+
 class BlogPost(models.Model):
     title = models.CharField(max_length=250, unique=True)
     slug = models.SlugField(max_length=130, unique=True)
