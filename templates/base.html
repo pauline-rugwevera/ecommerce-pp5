@@ -9,13 +9,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pack and Stash is an online store for home organization products">
-    <meta name="keywords"
-        content="home organization, pantry jars, bathroom organizers, baskets,pantry containers,packing, organization gifts,panty tips, home storage">
+    <meta name="keywords" content="home organization, pantry jars, pack, bathroom organizers, baskets,pantry containers,packing, organization gifts,panty tips,
+        home storage, canisters, eco friendly, jars, home organization trends, home organization essentials">
     {% endblock %}
 
     {% block extra_meta %}
     {% endblock %}
 
+    <!-- CSS -->
     {% block corecss %}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -26,6 +27,7 @@
     {% block extra_css %}
     {% endblock %}
 
+    <!-- Javascript -->
     {% block corejs %}
     <script src="https://kit.fontawesome.com/d1f7616fb2.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
@@ -83,7 +85,6 @@
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
                                 <p class="my-0">My account</p>
-
                             </div>
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options-mobile">
@@ -107,7 +108,6 @@
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
                             href="{% url 'view_bag' %}">
                             <div class="text-center">
-
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                 <p class="my-0">
                                     {% if grand_total %}
@@ -166,22 +166,26 @@
             <div>
                 <h3>
                     <a class="newsletter text-center" href="{% url 'newsletter' %}"><strong>Sign up for our
-                            newsletter</strong></a>
+                            newsletter</strong>
+                    </a>
                 </h3>
             </div>
             <div>
                 <a class="about" href="{% url 'about_us' %}" class="m-2">About us</a>
-                <a class="privacy-policy" rel="nofollow noopener"
+                <a class="privacy-policy" rel="noopener"
                     href="https://www.privacypolicygenerator.info/live.php?token=570h84BK7hpgjt9tVMrFxzenvC8iqQmW"
-                    target="_blank" role="button">Privacy Policy</a>
+                    target="_blank" role="button">Privacy Policy
+                </a>
             </div>
             <!-- socials -->
             <div>
-                <a class="m-2 footer-button" rel="nofollow noopener"
+                <a class="m-2 footer-button" rel="noopener"
                     href="https://www.facebook.com/profile.php?id=100090536471512" role="button" target="_blank"
-                    aria-label="link to facebook"><i class="fab fa-facebook"></i></a>
-                <a class="m-2 footer-button" rel="nofollow noopener" href="https://www.instagram.com/" role="button"
-                    target="_blank" aria-label="link to instagram"><i class="fab fa-instagram"></i></a>
+                    aria-label="link to facebook"><i class="fab fa-facebook"></i>
+                </a>
+                <a class="m-2 footer-button" rel="noopener" href="https://www.instagram.com/" role="button"
+                    target="_blank" aria-label="link to instagram"><i class="fab fa-instagram"></i>
+                </a>
             </div>
             <!-- Copyright -->
             <div>
