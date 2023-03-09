@@ -286,6 +286,10 @@ input[name='q']::placeholder {
     padding: 0;
     border-top: 4px solid #3A98B9;
 }
+.blog-main, .newsletter-main{
+    min-height: 62vh;
+}
+
 .newsletter{
 
     font-size: 19px;
