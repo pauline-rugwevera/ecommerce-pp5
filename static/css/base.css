@@ -391,3 +391,11 @@ color: #000;
     }
     
 }
+@media (max-width:450px) {
+    
+    .copyright{
+    
+      font-size: 10px;
+    }
+    
+}
