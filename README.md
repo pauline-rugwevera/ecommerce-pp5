@@ -74,5 +74,11 @@ I went on to create a flowchart to help me visualise website structure.
 
 </details>
 
+## E-commerce type
+
+Pack and stash just to emphasisenis an online store that sells directly to customers. The functionality on this site for a regular customer is ability to make a purchase swiflty and quickly. For the owners, the goal is to archieve CRUD functionality.
+## Marketing
+Though there are a lot of marketing techniques for businesses, Pack and Stash decided to first use the cheaper way, that is facebook to drive out content and engage with customers. Visit our facebook page [here](https://www.facebook.com/profile.php?id=100090536471512). 
+
 
 
