@@ -4,8 +4,8 @@ Pack and Stash is a fictional B2C e-commerce store that is  designed and impleme
 
 Link to deployed site can be found [here](https://packandstash.herokuapp.com/)
 
-### Showcase
-![Home page](static/images/Screenshot_1.jpg)
+## Showcase
+![Home page](static/images/homepage.jpg)
 
 # UX
 ## User stories
@@ -35,5 +35,44 @@ products as I prefer
 * As a site user I can comment to the blog posts so that I can express my opinion to the post
 * As a site user I can use the contact form so that I can contact the site owners
 * As a site user I can sign up to newsletter so that I can keep updated on the latest news
+
+### Strategy
+* Pack and Stash is a B2C type of business. Due to pressure of life amongst us from work/business to family not talking of pandemics, many of us are now opting for online shopping. Pack and Stash aims to offer flexible online shopping to its customers.
+
+## Architecture
+## Database
+
+<details>
+  <summary>Click here to view Database Schema:</summary>
+
+  ![](static/images/database.jpg)
+
+</details>
+
+## Design
+Before I wrote any code for this site, I had to pin point a simple design of what I wanted my site to look like by using wireframes, not only for myself but as well of communicating what I wanted to archieve to my mentor.
+
+<details>
+  <summary>Click here to view Wireframes:</summary>
+
+  ![](static/images/Screenshot_5.jpg)
+  ![](static/images/Screenshot_3.jpg)
+  ![](static/images/Screenshot_4.jpg)
+  ![](static/images/Screenshot_6.jpg)
+  ![](static/images/Screenshot_7.jpg)
+  ![](static/images/Screenshot_8.jpg)
+  ![](static/images/Screenshot_9.jpg)
+ 
+  </details>
+
+## Navigation
+I went on to create a flowchart to help me visualise website structure.
+<details>
+  <summary>Click here to view the navigation:</summary>
+
+  ![](static/images/navigation.png)
+
+</details>
+
 
 
