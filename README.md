@@ -80,5 +80,12 @@ Pack and stash just to emphasisenis an online store that sells directly to custo
 ## Marketing
 Though there are a lot of marketing techniques for businesses, Pack and Stash decided to first use the cheaper way, that is facebook to drive out content and engage with customers. Visit our facebook page [here](https://www.facebook.com/profile.php?id=100090536471512). 
 
+# Features
+## Homepage
+To start off, clicking the pack and stash url takes you to the home page with a logo on the left, my account and shopping bag to the right, a search bar followed by a navigation menu and footer. All these appear on every page on the site. Also found on home page is  a hero image accompanied by a hero text, and a shop now button beneath it.
+### Header and navigation
+![header](static/images/Screenshot_13.jpg)
+### The home page
+![home](static/images/home.jpg)
 
 
