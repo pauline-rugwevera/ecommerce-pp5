@@ -132,6 +132,11 @@ After completing an order, users receive an order confirmation with their detail
 If the user is the super user, they have an option to either delete or edit their product
 ![detail](static/images/detail-super.jpg)
 
+### Product management- add product
+Only super users are authorized to add products to products catalogue
+![add product](static/images/add_products.jpg)
+![add product ](static/images/add_products2.jpg)
+
 ### Product management- edit product
 Super users only can edit the product by editing either name, description, category, SKU, price and update image. An alert is also available to remind them what action they are performing. They can then update the changes or cancel.
 ![edit](static/images/product_management.jpg)
@@ -163,6 +168,20 @@ In terms of marketing, the site has a facebook page to push content.
 ![facebook](static/images/facebook.jpg)
 and target some of its customers through content creation
 ![facebook](static/images/facebook2.jpg)
+
+# Blog
+Users can view all the blog articles and select which one to read by clicking the image
+![blog](static/images/blog.jpg)
+
+## Blog detail
+![blog detail](static/images/blog_detail.jpg)
+Only logged in users are permitted to comment on articles in as much as they can read other comments written by other users
+![comments](static/images/comments.jpg)
+After logging in they can leave a comment on any blog article
+![comment](static/images/comment.jpg)
+
+
+
 
 
 
