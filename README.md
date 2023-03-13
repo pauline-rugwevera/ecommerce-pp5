@@ -122,13 +122,26 @@ User has an option to save their information to a profile. Users will need to in
 ![checkout bottom](static/images/checkout2.jpg)
 ### Checkout success
 After completing an order, users receive an order confirmation with their details including order number.
- ![detail](static/images/order_confirm.jpg)
+![order confirm](static/images/order_confirm.jpg)
 
- 
- ### Product detail- super user
+### Order confirmation email
+![confirmation email](static/images/email.jpg)
 
- If the user is the super user, they have an option to either delete or edit their product
- ![detail](static/images/detail-super.jpg)
+### Product detail- super user
+
+If the user is the super user, they have an option to either delete or edit their product
+![detail](static/images/detail-super.jpg)
+
+### Product management- edit product
+Super users only can edit the product by editing either name, description, category, SKU, price and update image. An alert is also available to remind them what action they are performing. They can then update the changes or cancel.
+![edit](static/images/product_management.jpg)
+![edit](static/images/product_management2.jpg)
+### Product management- delete product
+Super users only can as well delete the products from the site
+
+![delete](static/images/delete.jpg)
+
+
 
  
 
