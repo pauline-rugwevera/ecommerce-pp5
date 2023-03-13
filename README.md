@@ -105,11 +105,32 @@ The first navigation link from the logo is all products. This is where you can d
  ### Sort by category
  ![category](static/images/category.jpg)
  ### Product detail and add to bag
- Each product on site has a detailed information in form of a name, price,image, description and its category. The user is displayed with a quantity input box to select the quantity they need to add to the shopping bag either increasing or decreasing. They have an option to go back to products by clicking the keep shopping button.
+ Each product on site has a detailed information in form of a name, price,image, description and its category. The user is displayed with a quantity input box to select the quantity they need to add to the shopping bag either increasing or decreasing. They have an option to go back to products by clicking the keep shopping button.  Each time a user add a product to the bag they get a notification that alert them of that action.
+
  ![detail](static/images/product_detail.jpg)
+
+ ![add to bag](static/images/add_bag.jpg)
+
+ ### The shopping bag
+ Consists of the price, quantity of each item and sub total. User has an option to update their bag and or remove some items from bag. They can easily go back to products by clicking keep shopping or go to checkout.
+![detail](static/images/thebag.jpg)
+### Checkout
+On the left side of the checkout is where user puts their information, and on the right side is a summary of their order that is the total, the delivery.
+![checkout](static/images/checkout.jpg)
+User has an option to save their information to a profile. Users will need to input the card number for payment. They still have an option to adjust the bag at this point by clicking the adjust bag, or then completing the order.
+
+![checkout bottom](static/images/checkout2.jpg)
+### Checkout success
+After completing an order, users receive an order confirmation with their details including order number.
+ ![detail](static/images/order_confirm.jpg)
+
+ 
  ### Product detail- super user
+
  If the user is the super user, they have an option to either delete or edit their product
  ![detail](static/images/detail-super.jpg)
+
+ 
 
 
  
