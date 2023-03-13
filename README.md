@@ -180,6 +180,22 @@ Only logged in users are permitted to comment on articles in as much as they can
 After logging in they can leave a comment on any blog article
 ![comment](static/images/comment.jpg)
 
+# Blog management
+## Add blog
+Super users are the creators of the blog articles. To add a new blog they have to put title, slug, body and image and then save
+![add blog](static/images/add-blog1.jpg)
+![add blog2](static/images/add-blog2.jpg)
+
+## Edit blog
+Super users can also edit the blog and update the changes
+
+![edit blog](static/images/edit_blog.jpg)
+
+## Delete post
+If the post is no longer serving its purposes, super users can also delete it
+![delete blog](static/images/deletepost.jpg)
+
+
 
 
 
