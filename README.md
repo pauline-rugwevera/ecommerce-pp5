@@ -87,5 +87,14 @@ To start off, clicking the pack and stash url takes you to the home page with a 
 ![header](static/images/Screenshot_13.jpg)
 ### The home page
 ![home](static/images/home.jpg)
+### Register/Sign up
+On the right side of the home page, for the first time user they will need to register their account to enjoy most of the site benefits such as saving their orders, commenting on blogs. When registering users are asked their username, email and password
+![register](static/images/register.jpg)
+### Sign in
+Registered users would need to sign in when they visit the site again. They will be asked to enter their username and password. The Remember me option is also available making life easier for returning users. Is users need to reset their password, a forgot password is also available.
+![login](static/images/login.jpg)
+
+
+
 
 
