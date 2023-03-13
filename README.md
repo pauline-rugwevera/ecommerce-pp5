@@ -140,6 +140,13 @@ Super users only can edit the product by editing either name, description, categ
 Super users only can as well delete the products from the site
 
 ![delete](static/images/delete.jpg)
+## Special offers
+The site has special offers shoppers can take advantage of. From new arrivals to sale.
+### New Arrivals
+![arrivals](static/images/arrivals.jpg)
+### Sale
+![sale](static/images/sale.jpg)
+
 
 
 
