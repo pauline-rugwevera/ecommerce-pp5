@@ -147,7 +147,9 @@ The site has special offers shoppers can take advantage of. From new arrivals to
 ### Sale
 ![sale](static/images/sale.jpg)
 
-
+## About us
+About us page describes in bried what the site is all about to the users. With a shop now now beneath that takes users to the products page
+![about](static/images/about.jpg)
 
 
  
