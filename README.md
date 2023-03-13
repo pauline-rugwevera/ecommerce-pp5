@@ -147,9 +147,25 @@ The site has special offers shoppers can take advantage of. From new arrivals to
 ### Sale
 ![sale](static/images/sale.jpg)
 
+# Footer
+The footer appears on all pages of the site, it contains the newsletter sign up, about us, privacy policy, facebook and instagram
+## Newsletter
+Users can sign up using their email to receive news, offers and deals straight into their inbox.
+![newsletter](static/images/newsletter.jpg)
+
 ## About us
 About us page describes in bried what the site is all about to the users. With a shop now now beneath that takes users to the products page
 ![about](static/images/about.jpg)
+## Privacy policy
+![privacy policy](static/images/privacy_policy.jpg)
+## Facebook
+In terms of marketing, the site has a facebook page to push content.
+![facebook](static/images/facebook.jpg)
+and target some of its customers through content creation
+![facebook](static/images/facebook2.jpg)
+
+
+
 
 
  
