@@ -93,6 +93,31 @@ On the right side of the home page, for the first time user they will need to re
 ### Sign in
 Registered users would need to sign in when they visit the site again. They will be asked to enter their username and password. The Remember me option is also available making life easier for returning users. Is users need to reset their password, a forgot password is also available.
 ![login](static/images/login.jpg)
+### Logout
+Users are able to protecting their account by logging out of the site.
+![logout](static/images/logout.jpg)
+
+## All products
+The first navigation link from the logo is all products. This is where you can display all products available. On this a user has a liberty to sort the products either by price or by category.
+![products](static/images/products.jpg)
+ ### Sort by price
+ ![logout](static/images/price.jpg)
+ ### Sort by category
+ ![category](static/images/category.jpg)
+ ### Product detail and add to bag
+ Each product on site has a detailed information in form of a name, price,image, description and its category. The user is displayed with a quantity input box to select the quantity they need to add to the shopping bag either increasing or decreasing. They have an option to go back to products by clicking the keep shopping button.
+ ![detail](static/images/product_detail.jpg)
+ ### Product detail- super user
+ If the user is the super user, they have an option to either delete or edit their product
+ ![detail](static/images/detail-super.jpg)
+
+
+ 
+
+
+
+
+
 
 
 
