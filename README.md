@@ -154,6 +154,8 @@ The site has special offers shoppers can take advantage of. From new arrivals to
 
 # Footer
 The footer appears on all pages of the site, it contains the newsletter sign up, about us, privacy policy, facebook and instagram
+![footer](static/images/footer.jpg)
+
 ## Newsletter
 Users can sign up using their email to receive news, offers and deals straight into their inbox.
 ![newsletter](static/images/newsletter.jpg)
@@ -194,6 +196,10 @@ Super users can also edit the blog and update the changes
 ## Delete post
 If the post is no longer serving its purposes, super users can also delete it
 ![delete blog](static/images/deletepost.jpg)
+
+# Contact us
+A contact us page is available for users who need to get in touch with the store owners. They have to put their name, email, the topic and the overall message before sending.
+![contact](static/images/contact.jpg)
 
 
 
