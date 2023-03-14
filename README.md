@@ -216,6 +216,14 @@ A 404 page is also available to handle navigation errors with a home link button
 * Product rating
 * Users replying to other blog comments
 * Blog likes
+# Web marketing
+## Email marketing
+The free version of mailchimp was chosen with the current status of the business. Each user that signs up is added to the weekly newsletter and they might turn out to be future customers henceforth low cost to drive sales.
+
+## Social media marketing
+A facebook page was created to build community from the target market. Facebook is free and it also takes little to no time to set up and also it has so many users whom a business can strive to maintain a certain relationship, create content and connect with a target audience.
+![facebook](static/images/facebook.jpg)
+
 
 
 
