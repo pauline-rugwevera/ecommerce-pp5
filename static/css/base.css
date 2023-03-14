@@ -353,7 +353,7 @@ input[name='q']::placeholder {
     }
 
     .nav-link {
-        padding: 2.5px;
+        padding: 0.15rem;
     }
 
     .nav-link i.fa-lg {
@@ -376,14 +376,8 @@ input[name='q']::placeholder {
         font-size: .75rem;
     }
 
-
 }
 
-@media (max-width:320px) {
-    .hero-text {
-        font-size: 25px;
-    }
-}
 
 @media (max-width:340px) {
     .summary {
@@ -395,6 +389,13 @@ input[name='q']::placeholder {
 @media (max-width:450px) {
     .copyright {
         font-size: 10px;
+    }
+    .hero-text {
+        font-size: 25px;
+    }
+    .small-icons {
+        font-size: 8px;
+        padding: 6px;
     }
 
 }
