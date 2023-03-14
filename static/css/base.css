@@ -3,25 +3,25 @@ html {
 }
 
 body {
-
     height: calc(100vh - 164px);
     font-family: 'Lato';
     color: black;
-   
 }
-.edit{
+
+.edit {
     position: relative;
     float: right;
 }
 
-.hero-text{
-  background-color: #3A98B9;
-  font-size: 2.5rem;
- 
-  
+.hero-text {
+    background-color: #3A98B9;
+    font-size: 2.5rem;
 }
 
+.empty {
+    height: calc(56vh - 116px);
 
+}
 
 .hero-image {
     background: url('/static/images/hero.webp') no-repeat center center fixed;
@@ -29,21 +29,22 @@ body {
     height: 80%;
     flex: auto;
     width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  /* height: 50%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
     overflow: hidden;
-  
-} 
 
-.header{
-   position: fixed;
 }
-p{
+
+.header {
+    position: fixed;
+}
+
+p {
     font-size: 15px;
     font-family: 'Lato', sans-serif;
 }
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -55,15 +56,13 @@ p{
 
 .logo-font {
     text-transform: uppercase;
-   
-    
-  
 }
 
-.title{
+.title {
     font-size: 20px;
     font-family: 'Lato';
 }
+
 .main-logo-link {
     width: fit-content;
 }
@@ -74,22 +73,21 @@ p{
     min-width: 260px !important;
 }
 
-.btn-black{
+.btn-black {
     background: #000 !important;
     color: #fff !important;
 }
-.btn-black:hover{
+
+.btn-black:hover {
     background-color: #fff !important;
     color: #000 !important;
     border-color: #000 !important;
 
 }
 
-
 .shop-now-button:hover,
 .shop-now-button:active,
-
-.shop-now-button:focus{
+.shop-now-button:focus {
     background-color: #fff !important;
     color: #000 !important;
     border-color: #000 !important;
@@ -118,7 +116,6 @@ p{
     cursor: pointer;
 }
 
-
 input[name='q']::placeholder {
     color: #aab7c4;
 }
@@ -138,8 +135,6 @@ input[name='q']::placeholder {
     left: 0;
     position: fixed;
     background: #fff;
-    
-
 }
 
 .custom-toast {
@@ -201,7 +196,6 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-
 /* -------------------------------- Allauth form formatting */
 
 .allauth-form-inner-content p {
@@ -247,7 +241,6 @@ input[name='q']::placeholder {
     color: #000;
 }
 
-
 /* -------------------------------- Product admin form */
 
 .btn-file {
@@ -275,43 +268,48 @@ input[name='q']::placeholder {
     border-color: #dc3545;
     border-radius: 0;
 }
+
 /* footer */
-.footer{
+.footer {
     width: 100%;
     display: inline-block;
     position: relative;
-   
     padding: 0;
     border-top: 4px solid #3A98B9;
 }
-.blog-main, .newsletter-main{
+
+.blog-main,
+.newsletter-main {
     min-height: 62vh;
 }
 
-.newsletter{
-
+.newsletter {
     font-size: 19px;
     font-family: 'Lato', sans-serif;
 }
+
 .newsletter,
 .about,
 .footer-button,
-.privacy-policy{
+.privacy-policy {
     color: #000;
 }
 
-
-.newsletter:hover,.about:hover,.privacy-policy:hover,.footer-button:hover{
-color: #000;
+.newsletter:hover,
+.about:hover,
+.privacy-policy:hover,
+.footer-button:hover {
+    color: #000;
 }
 
 #mc_embed_signup {
-    background:#fff; 
-    clear:left; 
-    font:14px;  
-    width:600px;
-   
+    background: #fff;
+    clear: left;
+    font: 14px;
+    width: 600px;
+
 }
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -331,12 +329,11 @@ color: #000;
         left: 0;
         z-index: 3030;
     }
- 
 
     .header-container {
         padding-top: 160px;
     }
-    
+
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
@@ -353,16 +350,20 @@ color: #000;
     .display-4.logo-font.text-black {
         font-size: 2rem;
     }
-    .nav-link{
+
+    .nav-link {
         padding: 2.5px;
     }
-    .nav-link i.fa-lg{
+
+    .nav-link i.fa-lg {
         font-size: 16px;
     }
+
     .navbar-toggler {
         padding: .6rem .6rem;
         font-size: 1rem;
     }
+
     .btn.btn-outline-black.rounded-0,
     .btn.btn-black.rounded-0 {
         padding: .375rem .375rem;
@@ -378,27 +379,21 @@ color: #000;
 }
 
 @media (max-width:320px) {
-    .hero-text{
+    .hero-text {
         font-size: 25px;
-        
-
-    } 
-   
-    
+    }
 }
 
 @media (max-width:340px) {
-    .summary{
+    .summary {
         font-size: 14px;
-      }
-   
-    
-}
-@media (max-width:450px) {
-    
-    .copyright{
-    
-      font-size: 10px;
     }
-    
+
+}
+
+@media (max-width:450px) {
+    .copyright {
+        font-size: 10px;
+    }
+
 }
