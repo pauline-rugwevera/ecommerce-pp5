@@ -190,17 +190,32 @@ Super users are the creators of the blog articles. To add a new blog they have t
 
 ## Edit blog
 Super users can also edit the blog and update the changes
-
 ![edit blog](static/images/edit_blog.jpg)
 
 ## Delete post
 If the post is no longer serving its purposes, super users can also delete it
 ![delete blog](static/images/deletepost.jpg)
 
+## Delete comment
+Super users have the ability to delete comments that seem inappropriate
+![delete comment](static/images/delete_comment.jpg)
+
 # Contact us
 A contact us page is available for users who need to get in touch with the store owners. They have to put their name, email, the topic and the overall message before sending.
 ![contact](static/images/contact.jpg)
 
+# My Profile
+The my profile page displays a user's saved contact infomation and their order history
+![profile](static/images/profile.jpg)
+
+# 404 page
+A 404 page is also available to handle navigation errors with a home link button to take them back to the home page
+![error handling](static/images/404.jpg)
+
+### Future features
+* Product rating
+* Users replying to other blog comments
+* Blog likes
 
 
 
