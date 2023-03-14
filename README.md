@@ -224,6 +224,49 @@ The free version of mailchimp was chosen with the current status of the business
 A facebook page was created to build community from the target market. Facebook is free and it also takes little to no time to set up and also it has so many users whom a business can strive to maintain a certain relationship, create content and connect with a target audience.
 ![facebook](static/images/facebook.jpg)
 
+## Technologies
+### Languages
+
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+* [Javascript](https://www.javascript.com/)
+
+* [Python](https://www.python.org/)
+
+### Frameworks, programs and libraries used
+
+* [Django](https://www.djangoproject.com/) - Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.
+
+* [Bootstrap4](https://getbootstrap.com/) - A css framework
+
+* [Gitpod](https://www.gitpod.io/) - Gitpod was used as an IDE
+
+* [Github](https://github.com/) - I used Github to store all the data of my project after pushing it
+
+* [Heroku](https://www.heroku.com/) - is a cloud platform service  I used to deploy and host the project
+
+* [ElephantSQL](https://www.elephantsql.com/) - used as a database for the project
+
+* [Font Awesome](https://fontawesome.com/) - Was used to add icons for my social media links.
+
+* [PEP8ci](https://pep8ci.herokuapp.com/) - I used it to validate python code
+
+* [Balsamiq](https://balsamiq.com/) - was used to draw wireframes
+
+* [dbdiagram](https://dbdiagram.io/home) - was used to draw the database schema
+
+* [Stripe](https://stripe.com/en-ie) - was used for checkout functionality and facilitate online payments
+
+* [AWS](https://aws.amazon.com/s3/) - for  object storage through a web service interface.
+
+* [Unsplash](https://unsplash.com/) - images used for the project
+
+* [Pexels](https://www.pexels.com/) - images used for the project
+
+* [Adobestock](https://stock.adobe.com/ie/) - images used for the project
+
 
 
 
