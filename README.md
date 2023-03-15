@@ -412,6 +412,48 @@ Fixed the alerts by adding specified headings both to newsletter and product pri
 
   * profiles - no warnings
 
+# Manual Testing
+
+| Feature | Test  | Expected Result | Actual Result |
+
+| -------------| ----- | ----- | :----: |
+
+| PACK AND STASH  | Selecting logo on homepage |  directs user back to homepage |  Pass |
+| Search | Using the search box | Entering a search returns expected result  |  Pass |
+| Search no results | No search | Entering a no results search returns error message and shows all products  |  Pass |
+| Navigation Links  | Selecting navigation links |  directs user to relevant pages |  Pass |
+| All products  | Selecting all products |  directs user to all products |  Pass |
+| Back to top | Back to top arrow | Select the arrow box on the products page brings the user back to the top of the page  |  Pass |
+| Sort By  | Selecting the filter Sort |  successfully sort by price, name and category options |  Pass |
+| Shop Now button  | Selecting Shop Now button |  directs user to all  products page |  Pass |
+| About Us | Selecting About Us |  directs user to About Us page |  Pass |
+| Sign up for our newsletter | selecting Sign up for our newsletter |  directs user Sign up for our newsletter page |  Pass |
+| Privacy policy | Selecting privacy policy |  directs user to privacy policy|  Pass |
+| facebook icon | Selecting  facebook icon |  directs user to facebook page |  Pass |
+| Special offers | Selecting all specials |  directs user to all special offers |  Pass |
+| Blog | Selecting blog |  directs user to blog page |  Pass |
+| Blog detail | Selecting Blog detail |  directs user to blog detail |  Pass |
+| Leave a Comment when signed in | Submitting comment|  successfully submit and display comment |  Pass |
+| Add blog | Adding a new blog | successfully add new blog to blog page  |  Pass |
+| As Admin edit blog | editing blog|  successfully edited the blog |  Pass |
+| As Admin Delete Comment | Deleting comment|  successfully remove comment |  Pass |
+| Contact | Selecting Contact | directs user to contact page  |  Pass |
+| Contact form submission | submitting contact form | successfully sends submit form and can seen be in admin |  Pass |
+| My account | Selecting my account as admin | displays dropdown menu unique to admin apart from profile and logout  |  Pass |
+| Add product | Adding a new product| successfully add new product to products page  |  Pass |
+| Add Product | no image is selected | default image is used |  Pass |
+| As Admin edit product | editing product |  successfully edited the product |  Pass |
+| As Admin Delete product | Deleting product|  successfully remove product |  Pass |
+| Register | Register for an account | selecting Register in my account directs user signup page |  Pass |
+| Register | Registering as a new user | Registering as a new user form works |  Pass |
+| Login | Login to an account | selecting Login in my account directs user to Login page |  Pass |
+| Login | Login to an account | login-in as a new user form works |  Pass |
+| Login as admin| Login to as admin gives access to blog/product management | login-in as a new user form works |  Pass |
+| Logout | message shown | Logging out message shown |  Pass |
+
+ 
+
+
 
 
 

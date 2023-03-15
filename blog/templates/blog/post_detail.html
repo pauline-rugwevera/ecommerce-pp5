@@ -59,16 +59,17 @@
         <h3>Add Comments</h3>
         <form action="/blog/{{post.slug}}/" method="POST"> {% csrf_token %}
             <div class="form-floating">
-                  <textarea class="form-control" required placeholder="Leave a comment here" id="floatingTextarea2"
-                        style="height: 100px" id="body" name="body"></textarea>
-                  <label for="floatingTextarea2">Leave a comment here.</label>
-                  <br>
-                  <button type="submit" class="btn btn-black rounded-0">Submit</button>
+                <textarea class="form-control" required placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px" id="body" name="body"></textarea>
+                <label for="floatingTextarea2">Leave a comment here.</label>
+                <br>
+                <button type="submit" class="btn btn-black rounded-0">Submit</button>
             </div>
-      </form>
+        </form>
         {% else %}
         <div class="container">
-            <a href="/accounts/login/" class=" btn btn-black rounded-0 login-direct">Login</a> first to post comments below.
+            <a href="/accounts/login/" class="btn btn-black rounded-0 login-direct">Login</a> first to post comments
+            below.
             <br>
             {% endif %}
             <br>
@@ -100,5 +101,6 @@
             {% endfor %}
         </div>
     </div>
+</div>
 
-    {% endblock %}
+{% endblock %}
