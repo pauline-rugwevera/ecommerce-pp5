@@ -64,7 +64,7 @@
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
                         <input class="form-control border border-black rounded-0" type="text" name="q"
-                            placeholder="Search products">
+                            placeholder="Search products" aria-label="Search">
                         <div class="input-group-append">
                             <button class="form-control btn btn-black border-black rounded-0" type="submit">
                                 Search
@@ -164,11 +164,11 @@
     <div class="text-center footer fixed-bottom">
         <footer>
             <div>
-                <h3>
+                <h2>
                     <a class="newsletter text-center" href="{% url 'newsletter' %}"><strong>Sign up for our
                             newsletter</strong>
                     </a>
-                </h3>
+                </h2>
             </div>
             <div>
                 <a class="about m-2" href="{% url 'about_us' %}">About us</a>
