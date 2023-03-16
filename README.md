@@ -1,8 +1,9 @@
 # PACK AND STASH
 ## Introduction
+
 Pack and Stash is a fictional B2C e-commerce store that is  designed and implemented with Python and Django, HTML, CSS and some Javascript. It specialises in selling home organization products to consumers online. However it has to be noted that this site is for educational use only.
 
-Link to deployed site can be found [here](https://packandstash.herokuapp.com/)
+Link to deployed site can be found [Here](https://packandstash.herokuapp.com/)
 
 ## Showcase
 ![Home page](static/images/homepage.jpg)
@@ -40,6 +41,7 @@ products as I prefer
 * Pack and Stash is a B2C type of business. Due to pressure of life amongst us from work/business to family not talking of pandemics, many of us are now opting for online shopping. Pack and Stash aims to offer flexible online shopping to its customers.
 
 ## Architecture
+
 ## Database
 
 <details>
@@ -98,12 +100,18 @@ Users are able to protecting their account by logging out of the site.
 ![logout](static/images/logout.jpg)
 
 ## All products
+
 The first navigation link from the logo is all products. This is where you can display all products available. On this a user has a liberty to sort the products either by price or by category.
+
 ![products](static/images/products.jpg)
+
  ### Sort by price
+
  ![logout](static/images/price.jpg)
+
  ### Sort by category
  ![category](static/images/category.jpg)
+
  ### Product detail and add to bag
  Each product on site has a detailed information in form of a name, price,image, description and its category. The user is displayed with a quantity input box to select the quantity they need to add to the shopping bag either increasing or decreasing. They have an option to go back to products by clicking the keep shopping button.  Each time a user add a product to the bag they get a notification that alert them of that action.
 
@@ -113,7 +121,7 @@ The first navigation link from the logo is all products. This is where you can d
 
  ### The shopping bag
  Consists of the price, quantity of each item and sub total. User has an option to update their bag and or remove some items from bag. They can easily go back to products by clicking keep shopping or go to checkout.
-![detail](static/images/thebag.jpg)
+![bag](static/images/thebag.jpg)
 ### Checkout
 On the left side of the checkout is where user puts their information, and on the right side is a summary of their order that is the total, the delivery.
 ![checkout](static/images/checkout.jpg)
@@ -133,49 +141,64 @@ If the user is the super user, they have an option to either delete or edit thei
 ![detail](static/images/detail-super.jpg)
 
 ### Product management- add product
+
 Only super users are authorized to add products to products catalogue
 ![add product](static/images/add_products.jpg)
 ![add product ](static/images/add_products2.jpg)
 
 ### Product management- edit product
+
 Super users only can edit the product by editing either name, description, category, SKU, price and update image. An alert is also available to remind them what action they are performing. They can then update the changes or cancel.
 ![edit](static/images/product_management.jpg)
 ![edit](static/images/product_management2.jpg)
+
 ### Product management- delete product
+
 Super users only can as well delete the products from the site
 
 ![delete](static/images/delete.jpg)
 ## Special offers
+
 The site has special offers shoppers can take advantage of. From new arrivals to sale.
 ### New Arrivals
+
 ![arrivals](static/images/arrivals.jpg)
 ### Sale
 ![sale](static/images/sale.jpg)
 
 # Footer
+
 The footer appears on all pages of the site, it contains the newsletter sign up, about us, privacy policy, facebook and instagram
 ![footer](static/images/footer.jpg)
 
 ## Newsletter
+
 Users can sign up using their email to receive news, offers and deals straight into their inbox.
 ![newsletter](static/images/newsletter.jpg)
 
 ## About us
+
 About us page describes in bried what the site is all about to the users. With a shop now now beneath that takes users to the products page
 ![about](static/images/about.jpg)
+
 ## Privacy policy
+
 ![privacy policy](static/images/privacy_policy.jpg)
+
 ## Facebook
+
 In terms of marketing, the site has a facebook page to push content.
 ![facebook](static/images/facebook.jpg)
 and target some of its customers through content creation
 ![facebook](static/images/facebook2.jpg)
 
 # Blog
+
 Users can view all the blog articles and select which one to read by clicking the image
 ![blog](static/images/blog.jpg)
 
 ## Blog detail
+
 ![blog detail](static/images/blog_detail.jpg)
 Only logged in users are permitted to comment on articles in as much as they can read other comments written by other users
 ![comments](static/images/comments.jpg)
@@ -184,43 +207,59 @@ After logging in they can leave a comment on any blog article
 
 # Blog management
 ## Add blog
+
 Super users are the creators of the blog articles. To add a new blog they have to put title, slug, body and image and then save
 ![add blog](static/images/add-blog1.jpg)
 ![add blog2](static/images/add-blog2.jpg)
 
 ## Edit blog
+
 Super users can also edit the blog and update the changes
 ![edit blog](static/images/edit_blog.jpg)
 
 ## Delete post
+
 If the post is no longer serving its purposes, super users can also delete it
 ![delete blog](static/images/deletepost.jpg)
 
 ## Delete comment
+
 Super users have the ability to delete comments that seem inappropriate
 ![delete comment](static/images/delete_comment.jpg)
 
 # Contact us
+
 A contact us page is available for users who need to get in touch with the store owners. They have to put their name, email, the topic and the overall message before sending.
 ![contact](static/images/contact.jpg)
 
 # My Profile
+
 The my profile page displays a user's saved contact infomation and their order history
 ![profile](static/images/profile.jpg)
 
 # 404 page
+
 A 404 page is also available to handle navigation errors with a home link button to take them back to the home page
 ![error handling](static/images/404.jpg)
 
 ### Future features
+
 * Product rating
 * Users replying to other blog comments
 * Blog likes
+
 # Web marketing
 ## Email marketing
+
 The free version of mailchimp was chosen with the current status of the business. Each user that signs up is added to the weekly newsletter and they might turn out to be future customers henceforth low cost to drive sales.
 
+## Search engine optimization
+
+SEO keywords
+![seo](static/images/seo.jpg)
+
 ## Social media marketing
+
 A facebook page was created to build community from the target market. Facebook is free and it also takes little to no time to set up and also it has so many users whom a business can strive to maintain a certain relationship, create content and connect with a target audience.
 ![facebook](static/images/facebook.jpg)
 
@@ -281,7 +320,6 @@ Mobile
  
   </details> 
 
-
   <details>
   <summary>Click here for Markup results</summary>
 
@@ -296,39 +334,40 @@ Mobile
 
   </details> 
 
-  ## Wave
-  I also tested this site on [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) is a set of evaluation tools which helps authors to make their web content more accessible to individuals with disabilities. WAVE can identify many accessibility and Web Content Accessibility Guideline (WCAG) errors, but also facilitates human evaluation of web content as per definition on their site.
-  <details>
+## Wave
+
+I also tested this site on [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) is a set of evaluation tools which helps authors to make their web content more accessible to individuals with disabilities. WAVE can identify many accessibility and Web Content Accessibility Guideline (WCAG) errors, but also facilitates human evaluation of web content as per definition on their site.
+<details>
   <summary>Home</summary>
 
   ![](static/images/WebHome.jpg)
 
-  I went on to fix the error by adding the aria baleb to the seach box input
+  I went on to fix the error by adding the aria label to the seach box input
 
-  </details> 
-
-  <details>
-  <summary>Bag</summary>
-
-  ![](static/images/web_bag.jpg)
-
-  </details> 
+</details> 
 
 <details>
-  <summary>About us</summary>
+<summary>Bag</summary>
 
-  ![](static/images/webabout_us.jpg)
+![](static/images/web_bag.jpg)
 
-  Fixed the alerts by adding an h2 level heading to shop now button
-
-  </details> 
+</details> 
 
 <details>
-  <summary>Privacy policy</summary>
+<summary>About us</summary>
 
-  ![](static/images/webprivacy_policy.jpg)
+![](static/images/webabout_us.jpg)
 
-  </details> 
+Fixed the alerts by adding an h2 level heading to shop now button
+
+</details> 
+
+<details>
+<summary>Privacy policy</summary>
+
+![](static/images/webprivacy_policy.jpg)
+
+</details> 
 
 <details>
   <summary>Contact us</summary>
@@ -342,18 +381,18 @@ Mobile
 <details>
   <summary>Blog detail</summary>
 
-  ![](static/images/webblog_detail.jpg)
+![](static/images/webblog_detail.jpg)
 
-   I had no intention to add a heading on this page as well as adding headings to blog articles. Changed all comments tag to a paragraph
+I had no intention to add a heading on this page as well as adding headings to blog articles. Changed all comments tag to a paragraph
 
 </details> 
 
 <details>
   <summary>Blog</summary>
 
-  ![](static/images/web_blog.jpg)
+![](static/images/web_blog.jpg)
 
-   I added the first level heading as i realized it was necessary to keep the site uniform throughout
+I added the first level heading as i realized it was necessary to keep the site uniform throughout
 
 </details> 
 
@@ -361,7 +400,7 @@ Mobile
   
 <summary>All specials</summary>
 
-  ![](static/images/weball_specials.jpg)
+![](static/images/weball_specials.jpg)
 
   I added heading to price from paragraph tag. Skipped the labels part as I had no intention to use one
 
@@ -371,7 +410,7 @@ Mobile
   
 <summary>Products</summary>
 
-  ![](static/images/weball_products.jpg)
+![](static/images/weball_products.jpg)
 Fixed the alerts by adding specified headings both to newsletter and product price
 
 </details> 
@@ -380,9 +419,9 @@ Fixed the alerts by adding specified headings both to newsletter and product pri
   
 <summary>Product detail</summary>
 
-  ![](static/images/webproduct_detail.jpg)
+![](static/images/webproduct_detail.jpg)
 
-   I only have 2 colors black and white throughout the site except the footer border that has the same color with the contrast errror so I decided to skip
+I only have 2 colors black and white throughout the site except the footer border that has the same color with the contrast errror so I decided to skip
 
 </details> 
 
@@ -390,27 +429,27 @@ Fixed the alerts by adding specified headings both to newsletter and product pri
   
 <summary>Sign in</summary>
 
-  ![](static/images/sign_in.jpg)
+![](static/images/sign_in.jpg)
 
 </details> 
 
 
-  ### Javascript validation
-  I used JSlint to validate javascript found in some apps
+### Javascript validation
+I used JSlint to validate javascript found in some apps
 
-  * bag app - semi colon warning
+* bag app - semi colon warning
 
-  * blog app -  semi colon warnings
+* blog app -  semi colon warnings
 
-  * base.html - zero warnings
+* base.html - zero warnings
 
-  * newsletter - 8 warnings but the code is directly from mailchimp
+* newsletter - 8 warnings but the code is directly from mailchimp
 
-  * checkout - semi colon warnings
+* checkout - semi colon warnings
 
-  * products - semi colon warnings
+* products - semi colon warnings
 
-  * profiles - no warnings
+* profiles - no warnings
 
 # Manual Testing
  | Feature | Test  | Expected Result | Actual Result |
@@ -467,10 +506,11 @@ For this project there were so many bugs I encountered from the beginning though
 4. Double orders in admin panel
 ![double orders](static/images/double_order.jpg)
 
- Solution: In checkout views.py in the checkout function, 2 following lines of code fixed it
+Solution: In checkout views.py in the checkout function, 2 following lines of code fixed it
  ![solution](static/images/solution.jpg)
 
 ## Unfixed bug
+
 ![bug 8](static/images/bug8.jpg)
 When searching for an item that isnt available, correct result is displayed however I couldnt place the footer where it belongs on that page. I tried to use the     height: calc(vh - px), realized I was having another bug with the sort box after wards. However its something that I will later on have to fix.
 
