@@ -249,6 +249,7 @@ A 404 page is also available to handle navigation errors with a home link button
 * Blog likes
 
 # Web marketing
+
 ## Email marketing
 
 The free version of mailchimp was chosen with the current status of the business. Each user that signs up is added to the weekly newsletter and they might turn out to be future customers henceforth low cost to drive sales.
