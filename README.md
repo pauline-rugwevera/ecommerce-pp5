@@ -413,11 +413,8 @@ Fixed the alerts by adding specified headings both to newsletter and product pri
   * profiles - no warnings
 
 # Manual Testing
-
-| Feature | Test  | Expected Result | Actual Result |
-
+ | Feature | Test  | Expected Result | Actual Result |
 | -------------| ----- | ----- | :----: |
-
 | PACK AND STASH  | Selecting logo on homepage |  directs user back to homepage |  Pass |
 | Search | Using the search box | Entering a search returns expected result  |  Pass |
 | Search no results | No search | Entering a no results search returns error message and shows all products  |  Pass |
@@ -451,8 +448,32 @@ Fixed the alerts by adding specified headings both to newsletter and product pri
 | Login as admin| Login to as admin gives access to blog/product management | login-in as a new user form works |  Pass |
 | Logout | message shown | Logging out message shown |  Pass |
 
+## Bugs
+For this project there were so many bugs I encountered from the beginning though some were minor. Some of them I ended up taking them to tutor support whom have been very helpful
+
+1. Toasts not showing/displaying - Having all the code set up properly and checking in chrome dev tools I could see they were rendering in my template however not displaying. To fix this (from tutor support), There is a script in base.html to show any toasts in postloadjs and in the template I wanted them to show up I had a {% block postloadjs %} without {{ block.super }} in it. This resulted in the block from base.html being overwritten by a blank block. Removing the blank block in the detail template fixed it
+
+2.  In testing my search box and product management - error handling was not working each time I was testing the search box and product management. The fix was simple though it took me hours, I searched via Code Institute slack and found out someone made my mistake as well of missing out a closing div tag in toast error.
+
+![bug 2](static/images/bug2.jpg)
+ 
+![bug 3](static/images/bug3.jpg)
+ 
  
 
+3. I had errors in validating html and to resolve them I had to put ul tags in mobile header which led to the bug below. To fix this I added padding to icons(search, my account, bag)
+
+![bug 4](static/images/bug4.jpg)
+
+4. Double orders in admin panel
+![double orders](static/images/double_order.jpg)
+
+ Solution: In checkout views.py in the checkout function, 2 following lines of code fixed it
+ ![solution](static/images/solution.jpg)
+
+## Unfixed bug
+![bug 8](static/images/bug8.jpg)
+When searching for an item that isnt available, correct result is displayed however I couldnt place the footer where it belongs on that page. I tried to use the     height: calc(vh - px), realized I was having another bug with the sort box after wards. However its something that I will later on have to fix.
 
 
 
