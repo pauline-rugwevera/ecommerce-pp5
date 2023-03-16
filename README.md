@@ -535,6 +535,69 @@ I then went to create a database to connect to the new created app.
 * When complete click View to open the deployed app
 
 
+# From Github docs
+
+### Forking 
+
+* Open GitHub page that hosts the repository you wish to fork.
+* Find the 'Fork' button at the top right of the page
+* Once you click the button the fork will be in your repository
+
+### Cloning
+* Open Go to the repository page on Github
+* click on the green button that says "Code".
+* You can choose to download a zip file of the repository, unpack it on your local machine, and open it in your IDE.
+* Copy the URL under the HTTPS tab to clone using https.
+* In a new window, and set the current directory to the one you want to contain the clone from.
+* Type git clone and paste the URL copied from the GitHub page.
+* The repository clone will now be created on your machine. 
+
+## Credits
+* Images are from [Unsplash](https://unsplash.com/s/photos/home-organization), [Adobestock](https://stock.adobe.com/ie/), [Pexels](https://www.pexels.com/)
+
+* Code Institute Botique Ado walk through
+
+* Hello django code institute
+
+* [Dataflair django tutorial](https://data-flair.training/blogs/django-tutorials-home/)
+
+* [Stack overflow](https://stackoverflow.com/)
+
+Products description inspiration from
+
+* [The neat system](https://www.theneatsystem.co.za/)
+* [Amazon](https://www.amazon.co.uk/)
+* [Ikea](https://www.ikea.com)
+
+#### Blog content
+
+* [Home edit](https://thehomeedit.com/)
+* [Prettty organized home](https://www.organisedprettyhome.com/organise-kids-toys)
+* [Woman's day](https://www.womansday.com/)
+* [The neat method](https://neatmethod.com/)
+
+### Acknowledgement and support
+
+* This whole chapter took me a year and 5 months to complete instead of a year due to circumstances beyond control. Despite all this I would love to extend my gratitude to Code institute and their amazing team.  The tutor support for this project in particular, Ed, Ger you guys did a superb job.
+
+* My Mentor Adegbenga Adeye sharp,straight and honest feedback
+
+* My very own lovely husband who funded this course
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                   
 
 
