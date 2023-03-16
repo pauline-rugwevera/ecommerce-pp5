@@ -22,7 +22,7 @@ Link to deployed site can be found [Here](https://packandstash.herokuapp.com/)
 * As a site user I can create or edit my account so that I can update my details accordingly
 * As a site user I can login in my account so that I can view my order history
 * As a site user I can search for products so that I can find specific products
-* As a site user I can **sort products on criteria such as price and category so that I can I have a method of ordering the 
+* As a site user I can sort products on criteria such as price and category so that I can I have a method of ordering the 
 products as I prefer
 * As a site user I can browse through products so that I can decide what I may be interested in buying
 * As a site user I can look at product details so that I can decide if I want to purchase it
