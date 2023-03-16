@@ -84,19 +84,28 @@ Though there are a lot of marketing techniques for businesses, Pack and Stash de
 
 # Features
 ## Homepage
+
 To start off, clicking the pack and stash url takes you to the home page with a logo on the left, my account and shopping bag to the right, a search bar followed by a navigation menu and footer. All these appear on every page on the site. Also found on home page is  a hero image accompanied by a hero text, and a shop now button beneath it.
 ### Header and navigation
+
 ![header](static/images/Screenshot_13.jpg)
+
 ### The home page
+
 ![home](static/images/home.jpg)
 ### Register/Sign up
 On the right side of the home page, for the first time user they will need to register their account to enjoy most of the site benefits such as saving their orders, commenting on blogs. When registering users are asked their username, email and password
 ![register](static/images/register.jpg)
+
 ### Sign in
+
 Registered users would need to sign in when they visit the site again. They will be asked to enter their username and password. The Remember me option is also available making life easier for returning users. Is users need to reset their password, a forgot password is also available.
+
 ![login](static/images/login.jpg)
+
 ### Logout
 Users are able to protecting their account by logging out of the site.
+
 ![logout](static/images/logout.jpg)
 
 ## All products
@@ -110,9 +119,11 @@ The first navigation link from the logo is all products. This is where you can d
  ![logout](static/images/price.jpg)
 
  ### Sort by category
+ 
  ![category](static/images/category.jpg)
 
  ### Product detail and add to bag
+
  Each product on site has a detailed information in form of a name, price,image, description and its category. The user is displayed with a quantity input box to select the quantity they need to add to the shopping bag either increasing or decreasing. They have an option to go back to products by clicking the keep shopping button.  Each time a user add a product to the bag they get a notification that alert them of that action.
 
  ![detail](static/images/product_detail.jpg)
@@ -120,19 +131,27 @@ The first navigation link from the logo is all products. This is where you can d
  ![add to bag](static/images/add_bag.jpg)
 
  ### The shopping bag
+
  Consists of the price, quantity of each item and sub total. User has an option to update their bag and or remove some items from bag. They can easily go back to products by clicking keep shopping or go to checkout.
+
 ![bag](static/images/thebag.jpg)
+
 ### Checkout
+
 On the left side of the checkout is where user puts their information, and on the right side is a summary of their order that is the total, the delivery.
+
 ![checkout](static/images/checkout.jpg)
 User has an option to save their information to a profile. Users will need to input the card number for payment. They still have an option to adjust the bag at this point by clicking the adjust bag, or then completing the order.
 
 ![checkout bottom](static/images/checkout2.jpg)
+
 ### Checkout success
+
 After completing an order, users receive an order confirmation with their details including order number.
 ![order confirm](static/images/order_confirm.jpg)
 
 ### Order confirmation email
+
 ![confirmation email](static/images/email.jpg)
 
 ### Product detail- super user
@@ -143,12 +162,14 @@ If the user is the super user, they have an option to either delete or edit thei
 ### Product management- add product
 
 Only super users are authorized to add products to products catalogue
+
 ![add product](static/images/add_products.jpg)
 ![add product ](static/images/add_products2.jpg)
 
 ### Product management- edit product
 
 Super users only can edit the product by editing either name, description, category, SKU, price and update image. An alert is also available to remind them what action they are performing. They can then update the changes or cancel.
+
 ![edit](static/images/product_management.jpg)
 ![edit](static/images/product_management2.jpg)
 
@@ -169,6 +190,7 @@ The site has special offers shoppers can take advantage of. From new arrivals to
 # Footer
 
 The footer appears on all pages of the site, it contains the newsletter sign up, about us, privacy policy, facebook and instagram
+
 ![footer](static/images/footer.jpg)
 
 ## Newsletter
@@ -179,6 +201,7 @@ Users can sign up using their email to receive news, offers and deals straight i
 ## About us
 
 About us page describes in bried what the site is all about to the users. With a shop now now beneath that takes users to the products page
+
 ![about](static/images/about.jpg)
 
 ## Privacy policy
@@ -187,9 +210,10 @@ About us page describes in bried what the site is all about to the users. With a
 
 ## Facebook
 
-In terms of marketing, the site has a facebook page to push content.
+In terms of marketing, the site has a facebook page to push content.and target some of its customers through content creation
+
 ![facebook](static/images/facebook.jpg)
-and target some of its customers through content creation
+
 ![facebook](static/images/facebook2.jpg)
 
 # Blog
@@ -200,15 +224,21 @@ Users can view all the blog articles and select which one to read by clicking th
 ## Blog detail
 
 ![blog detail](static/images/blog_detail.jpg)
+
 Only logged in users are permitted to comment on articles in as much as they can read other comments written by other users
+
 ![comments](static/images/comments.jpg)
+
 After logging in they can leave a comment on any blog article
+
 ![comment](static/images/comment.jpg)
 
 # Blog management
+
 ## Add blog
 
 Super users are the creators of the blog articles. To add a new blog they have to put title, slug, body and image and then save
+
 ![add blog](static/images/add-blog1.jpg)
 ![add blog2](static/images/add-blog2.jpg)
 
@@ -257,11 +287,13 @@ The free version of mailchimp was chosen with the current status of the business
 ## Search engine optimization
 
 SEO keywords
+
 ![seo](static/images/seo.jpg)
 
 ## Social media marketing
 
 A facebook page was created to build community from the target market. Facebook is free and it also takes little to no time to set up and also it has so many users whom a business can strive to maintain a certain relationship, create content and connect with a target audience.
+
 ![facebook](static/images/facebook.jpg)
 
 ## Technologies
@@ -495,24 +527,24 @@ For this project there were so many bugs I encountered from the beginning though
 
 2.  In testing my search box and product management - error handling was not working each time I was testing the search box and product management. The fix was simple though it took me hours, I searched via Code Institute slack and found out someone made my mistake as well of missing out a closing div tag in toast error.
 
-![bug 2](static/images/bug2.jpg)
+  ![](static/images/bug2.jpg)
  
-![bug 3](static/images/bug3.jpg)
+  ![](static/images/bug3.jpg)
  
  
 3. I had errors in validating html and to resolve them I had to put ul tags in mobile header which led to the bug below. To fix this I added padding to icons(search, my account, bag)
 
-![bug 4](static/images/bug4.jpg)
+  ![](static/images/bug4.jpg)
 
 4. Double orders in admin panel
-![double orders](static/images/double_order.jpg)
+  ![](static/images/double_order.jpg)
 
 Solution: In checkout views.py in the checkout function, 2 following lines of code fixed it
- ![solution](static/images/solution.jpg)
+ ![](static/images/solution.jpg)
 
 ## Unfixed bug
 
-![bug 8](static/images/bug8.jpg)
+ ![](static/images/bug8.jpg)
 When searching for an item that isnt available, correct result is displayed however I couldnt place the footer where it belongs on that page. I tried to use the     height: calc(vh - px), realized I was having another bug with the sort box after wards. However its something that I will later on have to fix.
 
 # Deployment
@@ -585,6 +617,7 @@ I then went to create a database to connect to the new created app.
 * Once you click the button the fork will be in your repository
 
 ### Cloning
+
 * Open Go to the repository page on Github
 * click on the green button that says "Code".
 * You can choose to download a zip file of the repository, unpack it on your local machine, and open it in your IDE.
@@ -594,6 +627,7 @@ I then went to create a database to connect to the new created app.
 * The repository clone will now be created on your machine. 
 
 ## Credits
+
 * Images are from [Unsplash](https://unsplash.com/s/photos/home-organization), [Adobestock](https://stock.adobe.com/ie/), [Pexels](https://www.pexels.com/)
 
 * Code Institute Botique Ado walk through
