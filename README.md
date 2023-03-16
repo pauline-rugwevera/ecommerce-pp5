@@ -460,7 +460,6 @@ For this project there were so many bugs I encountered from the beginning though
 ![bug 3](static/images/bug3.jpg)
  
  
-
 3. I had errors in validating html and to resolve them I had to put ul tags in mobile header which led to the bug below. To fix this I added padding to icons(search, my account, bag)
 
 ![bug 4](static/images/bug4.jpg)
@@ -474,6 +473,79 @@ For this project there were so many bugs I encountered from the beginning though
 ## Unfixed bug
 ![bug 8](static/images/bug8.jpg)
 When searching for an item that isnt available, correct result is displayed however I couldnt place the footer where it belongs on that page. I tried to use the     height: calc(vh - px), realized I was having another bug with the sort box after wards. However its something that I will later on have to fix.
+
+# Deployment
+
+I developed this site on Gitpod, using git for version control. Then deployed to Heroku using the following steps
+
+* Log in to [Heroku](https://id.heroku.com/login) or create an account
+
+* Click New and Create New App
+
+* I selected Europe as region.
+
+* Click Create App button
+
+I then went to create a database to connect to the new created app.
+
+* Login to [ElephantSQL](https://www.elephantsql.com/)
+
+* Create new instance
+
+* Set up your plan - Give the plan a name and select Tiny Turtle free plan
+
+* Select region button
+
+* Select a data center ner your. I selected EU-West-1(Ireland)
+
+* Click Review
+
+* Click Create instance
+
+* Return to elephantsql dashboard, click on database instance name
+
+* In the url section, clicking the copy icon will copy the database url to the clipboard
+
+* Go back to Heroku to your created app, go to Settings
+
+* Add config var DATABASE-URL, and for the value, copy in your databse url from ElephantSQL. do not add quotation marks around your database
+
+* In Gitpod install dj-database_url and psycopg2 to connect to your external database
+
+* Update requirements.txt: pip freeze > requirements
+
+* import dj_database_url in settings and update your database
+
+* migrate your database
+
+* create a new superuser for your database and at this point your database is exposed do not commit it to github
+
+* Install gunicorn and freeze into the requirements file
+
+* Then create Procfile
+
+* DISABLE_COLLECTSTATIC
+
+* Commit and push to github
+
+* On your app in Heroku go to Deploy and connect it to github and search your repository, click connect.
+
+* Choose automatic or manual deploy. I chose manual. Click deploy branch
+
+* When complete click View to open the deployed app
+
+
+                  
+
+
+
+
+
+
+
+
+
+
 
 
 
