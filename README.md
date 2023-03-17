@@ -484,6 +484,9 @@ I used JSlint to validate javascript found in some apps
 
 * profiles - no warnings
 
+### Python
+[ CI Python linter ](https://pep8ci.herokuapp.com/) was used to test python code
+
 # Manual Testing
  | Feature | Test  | Expected Result | Actual Result |
 | -------------| ----- | ----- | :----: |
@@ -521,31 +524,41 @@ I used JSlint to validate javascript found in some apps
 | Logout | message shown | Logging out message shown |  Pass |
 
 ## Bugs
-For this project there were so many bugs I encountered from the beginning though some were minor. Some of them I ended up taking them to tutor support whom have been very helpful
 
-1. Toasts not showing/displaying - Having all the code set up properly and checking in chrome dev tools I could see they were rendering in my template however not displaying. To fix this (from tutor support), There is a script in base.html to show any toasts in postloadjs and in the template I wanted them to show up I had a {% block postloadjs %} without {{ block.super }} in it. This resulted in the block from base.html being overwritten by a blank block. Removing the blank block in the detail template fixed it
+For this project there were so many bugs I encountered from the beginning though some were minor. Some of them I ended up taking them to tutor support whom have been very helpful.
 
-2.  In testing my search box and product management - error handling was not working each time I was testing the search box and product management. The fix was simple though it took me hours, I searched via Code Institute slack and found out someone made my mistake as well of missing out a closing div tag in toast error.
+### Bug 1
+Toasts not showing/displaying - Having all the code set up properly and checking in chrome dev tools I could see they were rendering in my template however not displaying. To fix this (from tutor support), There is a script in base.html to show any toasts in postloadjs and in the template I wanted them to show up I had a {% block postloadjs %} without {{ block.super }} in it. This resulted in the block from base.html being overwritten by a blank block. Removing the blank block in the detail template fixed it.
 
-  ![](static/images/bug2.jpg)
+### Bug 2
+
+In testing my search box and product management - error handling was not working each time I was testing the search box and product management whereby the error toast was rendering but not display , also the header would just disappear. The fix was simple though it took me hours, I searched via Code Institute slack and found out someone made my mistake as well of missing out a closing div tag in toast error.
+
+![](static/images/bug2.jpg)
  
-  ![](static/images/bug3.jpg)
+![](static/images/bug3.jpg)
  
- 
-3. I had errors in validating html and to resolve them I had to put ul tags in mobile header which led to the bug below. To fix this I added padding to icons(search, my account, bag)
+### Bug 3
 
-  ![](static/images/bug4.jpg)
+I had errors in validating html and to resolve them I had to put ul tags in mobile header which led to the bug below. To fix this I added padding to icons(search, my account, bag)
 
-4. Double orders in admin panel
-  ![](static/images/double_order.jpg)
+![](static/images/bug4.jpg)
+
+### Bug 4
+
+Double orders in admin panel
+
+![](static/images/double_order.jpg)
 
 Solution: In checkout views.py in the checkout function, 2 following lines of code fixed it
- ![](static/images/solution.jpg)
+
+![](static/images/solution.jpg)
 
 ## Unfixed bug
 
- ![](static/images/bug8.jpg)
-When searching for an item that isnt available, correct result is displayed however I couldnt place the footer where it belongs on that page. I tried to use the     height: calc(vh - px), realized I was having another bug with the sort box after wards. However its something that I will later on have to fix.
+![](static/images/bug8.jpg)
+
+When searching for an item that isnt available, correct result is displayed however I couldnt place the footer where it belongs on that page. I tried to use the height: calc(vh - px), realized I was having another bug with the sort box after wards. However its something that I will later on have to fix.
 
 # Deployment
 
@@ -607,8 +620,7 @@ I then went to create a database to connect to the new created app.
 
 * When complete click View to open the deployed app
 
-
-# From Github docs
+## From Github docs
 
 ### Forking 
 
