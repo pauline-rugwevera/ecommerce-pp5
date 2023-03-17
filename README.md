@@ -554,6 +554,10 @@ Solution: In checkout views.py in the checkout function, 2 following lines of co
 
 ![](static/images/solution.jpg)
 
+### Bug 5
+
+Contact form resubmission on page refresh. To fix this according to [the solution from stack overflow](https://stackoverflow.com/questions/5823580/django-form-resubmitted-upon-refresh)
+I needed to use a return HttpResponseRedirect,which I added to my view after the form is submitted.
 ## Unfixed bug
 
 ![](static/images/bug8.jpg)

@@ -165,21 +165,21 @@
         <footer>
             <div>
                 <h2>
-                    <a class="newsletter text-center" href="{% url 'newsletter' %}"><strong>Sign up for our
-                            newsletter</strong>
+                    <a class="newsletter text-center" href="{% url 'newsletter' %}">
+                        <strong>Sign up for our newsletter</strong>
                     </a>
                 </h2>
             </div>
             <div>
                 <a class="about m-2" href="{% url 'about_us' %}">About us</a>
-                <a class="privacy-policy" rel="noopener"
+                <a class="privacy-policy" rel="noopener nofollow"
                     href="https://www.privacypolicygenerator.info/live.php?token=570h84BK7hpgjt9tVMrFxzenvC8iqQmW"
                     target="_blank" role="button">Privacy Policy
                 </a>
             </div>
             <!-- socials -->
-            <div>
-                <a class="m-2 footer-button" rel="noopener"
+            <div class="social-networks">
+                <a class="m-2" rel="noopener"
                     href="https://www.facebook.com/profile.php?id=100090536471512" role="button" target="_blank"
                     aria-label="link to facebook"><i class="fab fa-facebook"></i>
                 </a>
@@ -199,6 +199,7 @@
             </div>
         </footer>
     </div>
+    
 
     {% block postloadjs %}
     <script>

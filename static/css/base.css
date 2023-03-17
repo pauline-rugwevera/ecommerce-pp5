@@ -19,15 +19,12 @@ body {
     width: max-content;
 }
 
-.empty {
-    height: calc(56vh - 116px);
 
-}
 
 .hero-image {
     background: url('/static/images/hero.webp') no-repeat center center fixed;
     background-size: cover;
-    height: 80%;
+    height: 75%;
     flex: auto;
     width: 100%;
     background-position: center;
@@ -122,6 +119,7 @@ input[name='q']::placeholder {
 }
 
 /* ....bootstrap toasts */
+
 .message-container {
     position: fixed;
     top: 72px;
@@ -147,6 +145,7 @@ input[name='q']::placeholder {
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+
 .arrow-up {
     width: 0;
     height: 0;
@@ -159,6 +158,7 @@ input[name='q']::placeholder {
 }
 
 /* Convenience classes - colors copied from Bootstrap */
+
 .arrow-primary {
     border-bottom-color: #007bff !important;
 }
@@ -270,6 +270,11 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+.newsletter-main{
+    min-height: 60vh;
+
+}
+
 /* footer */
 .footer {
     width: 100%;
@@ -279,10 +284,6 @@ input[name='q']::placeholder {
     border-top: 4px solid #3A98B9;
 }
 
-.blog-main,
-.newsletter-main {
-    min-height: 62vh;
-}
 
 .newsletter {
     font-size: 19px;
@@ -298,8 +299,7 @@ input[name='q']::placeholder {
 
 .newsletter:hover,
 .about:hover,
-.privacy-policy:hover,
-.footer-button:hover {
+.privacy-policy:hover {
     color: #000;
 }
 
@@ -311,9 +311,22 @@ input[name='q']::placeholder {
 
 }
 
+.social-networks i {
+    font-size: 160%;
+    padding: 5px; 
+    color: #000;
+}
+
+.social-networks i:hover{
+    color: #000 ;
+ 
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
+
 @media (min-width: 1200px) {
     .container {
         max-width: 80%;
@@ -322,6 +335,7 @@ input[name='q']::placeholder {
 
 
 /* fixed top navbar only on medium and up */
+
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
