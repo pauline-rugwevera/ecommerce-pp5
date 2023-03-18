@@ -6,7 +6,7 @@ body {
     height: calc(100vh - 164px);
     font-family: 'Lato';
     color: #000;
-   
+
 }
 
 .edit {
@@ -19,8 +19,6 @@ body {
     font-size: 2.5rem;
     width: max-content;
 }
-
-
 
 .hero-image {
     background: url('/static/images/hero.webp') no-repeat center center fixed;
@@ -41,11 +39,13 @@ p {
     font-family: 'Lato', sans-serif;
 }
 
-img{
+img {
     height: 200px;
     width: 200px;
     overflow: hidden;
+    object-fit: cover;
 }
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -273,12 +273,12 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
-.newsletter-main{
+.newsletter-main {
     min-height: 60vh;
 
 }
 
-/* footer */
+/* the footer */
 footer {
     width: 100%;
     display: inline-block;
@@ -287,15 +287,12 @@ footer {
     position: relative;
     padding: 0;
     border-top: 4px solid #3A98B9
-   
-}
-.img {
-   
-    width:  100px;
-    height: 250px;
-   
 }
 
+.img {
+    width: 100px;
+    height: 250px;
+}
 
 .newsletter {
     font-size: 19px;
@@ -325,13 +322,13 @@ footer {
 
 .social-networks i {
     font-size: 160%;
-    padding: 5px; 
+    padding: 5px;
     color: #000;
 }
 
-.social-networks i:hover{
-    color: #000 ;
- 
+.social-networks i:hover {
+    color: #000;
+
 }
 
 
@@ -416,9 +413,11 @@ footer {
     .copyright {
         font-size: 10px;
     }
+
     .hero-text {
         font-size: 25px;
     }
+
     .small-icons {
         font-size: 8px;
         padding: 6px;
