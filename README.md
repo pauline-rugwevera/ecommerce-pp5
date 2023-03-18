@@ -47,7 +47,7 @@ products as I prefer
 <details>
   <summary>Click here to view Database Schema:</summary>
 
-  ![](static/images/database.jpg)
+  ![](static/images/schema.png)
 
 </details>
 
@@ -163,27 +163,27 @@ If the user is the super user, they have an option to either delete or edit thei
 
 Only super users are authorized to add products to products catalogue
 
-![add product](static/images/add_products.jpg)
-![add product ](static/images/add_products2.jpg)
+![add product](static/images/add_product.png)
 
 ### Product management- edit product
 
 Super users only can edit the product by editing either name, description, category, SKU, price and update image. An alert is also available to remind them what action they are performing. They can then update the changes or cancel.
 
-![edit](static/images/product_management.jpg)
-![edit](static/images/product_management2.jpg)
+![edit](static/images/edit_product.png)
 
 ### Product management- delete product
 
 Super users only can as well delete the products from the site
 
 ![delete](static/images/delete.jpg)
+
 ## Special offers
 
 The site has special offers shoppers can take advantage of. From new arrivals to sale.
 ### New Arrivals
 
 ![arrivals](static/images/arrivals.jpg)
+
 ### Sale
 ![sale](static/images/sale.jpg)
 
@@ -239,13 +239,12 @@ After logging in they can leave a comment on any blog article
 
 Super users are the creators of the blog articles. To add a new blog they have to put title, slug, body and image and then save
 
-![add blog](static/images/add-blog1.jpg)
-![add blog2](static/images/add-blog2.jpg)
+![add blog](static/images/add_blog.png)
 
 ## Edit blog
 
 Super users can also edit the blog and update the changes
-![edit blog](static/images/edit_blog.jpg)
+![edit blog](static/images/edit_blog.png)
 
 ## Delete post
 
@@ -340,36 +339,54 @@ A facebook page was created to build community from the target market. Facebook 
 * [Adobestock](https://stock.adobe.com/ie/) - images used for the project
 
 # Testing
+## Manual Testing
+ | Feature | Test  | Expected Result | Actual Result |
+| -------------| ----- | ----- | :----: |
+| PACK AND STASH  | Selecting logo on homepage |  directs user back to homepage |  Pass |
+| Search | Using the search box | Entering a search returns expected result  |  Pass |
+| Search no results | No search | Entering a no results search returns error message and shows all products  |  Pass |
+| Navigation Links  | Selecting navigation links |  directs user to relevant pages |  Pass |
+| All products  | Selecting all products |  directs user to all products |  Pass |
+| Back to top | Back to top arrow | Select the arrow box on the products page brings the user back to the top of the page  |  Pass |
+| Sort By  | Selecting the filter Sort |  successfully sort by price, name and category options |  Pass |
+| Shop Now button  | Selecting Shop Now button |  directs user to all  products page |  Pass |
+| About Us | Selecting About Us |  directs user to About Us page |  Pass |
+| Sign up for our newsletter | selecting Sign up for our newsletter |  directs user Sign up for our newsletter page |  Pass |
+| Privacy policy | Selecting privacy policy |  directs user to privacy policy|  Pass |
+| facebook icon | Selecting  facebook icon |  directs user to facebook page |  Pass |
+| Special offers | Selecting all specials |  directs user to all special offers |  Pass |
+| Blog | Selecting blog |  directs user to blog page |  Pass |
+| Blog detail | Selecting Blog detail |  directs user to blog detail |  Pass |
+| Leave a Comment when signed in | Submitting comment|  successfully submit and display comment |  Pass |
+| Add blog | Adding a new blog | successfully add new blog to blog page  |  Pass |
+| As Admin edit blog | editing blog|  successfully edited the blog |  Pass |
+| As Admin Delete Comment | Deleting comment|  successfully remove comment |  Pass |
+| Contact | Selecting Contact | directs user to contact page  |  Pass |
+| Contact form submission | submitting contact form | successfully sends submit form and can seen be in admin |  Pass |
+| My account | Selecting my account as admin | displays dropdown menu unique to admin apart from profile and logout  |  Pass |
+| Add product | Adding a new product| successfully add new product to products page  |  Pass |
+| Add Product | no image is selected | default image is used |  Pass |
+| As Admin edit product | editing product |  successfully edited the product |  Pass |
+| As Admin Delete product | Deleting product|  successfully remove product |  Pass |
+| Register | Register for an account | selecting Register in my account directs user signup page |  Pass |
+| Register | Registering as a new user | Registering as a new user form works |  Pass |
+| Login | Login to an account | selecting Login in my account directs user to Login page |  Pass |
+| Login | Login to an account | login-in as a new user form works |  Pass |
+| Login as admin| Login to as admin gives access to blog/product management | login-in as a new user form works |  Pass |
+| Logout | message shown | Logging out message shown |  Pass |
 
- <details>
-  <summary>Click here for Lighthouse results</summary>
- Desktop
+## Functionality
 
-  ![](static/images/lighthouse_desktop.jpg)
+Throughout developing this site, I have been using Chrome, and chrome dev tools to help with debugging issues. Testing responsiveness was done using chrome emulated devices.
 
-Mobile
+## Compatibility testing
 
-  ![](static/images/lighthouse_mobile.jpg)
- 
-  </details> 
+Chrome emulated devices, and hardware devices iphone 13, samsung A51 and samsung tablet E were used to test compatibility
 
-  <details>
-  <summary>Click here for Markup results</summary>
-
-   ![](static/images/html_validator.jpg)
-
-  </details> 
-
-  <details>
-  <summary>Click here for CSS results </summary>
-
-  ![](static/images/css_validator.jpg)
-
-  </details> 
-
-## Wave
+## Wave testing
 
 I also tested this site on [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) is a set of evaluation tools which helps authors to make their web content more accessible to individuals with disabilities. WAVE can identify many accessibility and Web Content Accessibility Guideline (WCAG) errors, but also facilitates human evaluation of web content as per definition on their site.
+
 <details>
   <summary>Home</summary>
 
@@ -467,6 +484,34 @@ I only have 2 colors black and white throughout the site except the footer borde
 </details> 
 
 
+
+ <details>
+  <summary>Click here for Lighthouse results</summary>
+ Desktop
+
+  ![](static/images/lighthouse_desktop.jpg)
+
+Mobile
+
+  ![](static/images/lighthouse_mobile.jpg)
+ 
+  </details> 
+
+  <details>
+  <summary>Click here for Markup results</summary>
+
+   ![](static/images/html_validator.jpg)
+
+  </details> 
+
+  <details>
+  <summary>Click here for CSS results </summary>
+
+  ![](static/images/css_validator.jpg)
+
+  </details> 
+
+
 ### Javascript validation
 I used JSlint to validate javascript found in some apps
 
@@ -487,41 +532,7 @@ I used JSlint to validate javascript found in some apps
 ### Python
 [ CI Python linter ](https://pep8ci.herokuapp.com/) was used to test python code
 
-# Manual Testing
- | Feature | Test  | Expected Result | Actual Result |
-| -------------| ----- | ----- | :----: |
-| PACK AND STASH  | Selecting logo on homepage |  directs user back to homepage |  Pass |
-| Search | Using the search box | Entering a search returns expected result  |  Pass |
-| Search no results | No search | Entering a no results search returns error message and shows all products  |  Pass |
-| Navigation Links  | Selecting navigation links |  directs user to relevant pages |  Pass |
-| All products  | Selecting all products |  directs user to all products |  Pass |
-| Back to top | Back to top arrow | Select the arrow box on the products page brings the user back to the top of the page  |  Pass |
-| Sort By  | Selecting the filter Sort |  successfully sort by price, name and category options |  Pass |
-| Shop Now button  | Selecting Shop Now button |  directs user to all  products page |  Pass |
-| About Us | Selecting About Us |  directs user to About Us page |  Pass |
-| Sign up for our newsletter | selecting Sign up for our newsletter |  directs user Sign up for our newsletter page |  Pass |
-| Privacy policy | Selecting privacy policy |  directs user to privacy policy|  Pass |
-| facebook icon | Selecting  facebook icon |  directs user to facebook page |  Pass |
-| Special offers | Selecting all specials |  directs user to all special offers |  Pass |
-| Blog | Selecting blog |  directs user to blog page |  Pass |
-| Blog detail | Selecting Blog detail |  directs user to blog detail |  Pass |
-| Leave a Comment when signed in | Submitting comment|  successfully submit and display comment |  Pass |
-| Add blog | Adding a new blog | successfully add new blog to blog page  |  Pass |
-| As Admin edit blog | editing blog|  successfully edited the blog |  Pass |
-| As Admin Delete Comment | Deleting comment|  successfully remove comment |  Pass |
-| Contact | Selecting Contact | directs user to contact page  |  Pass |
-| Contact form submission | submitting contact form | successfully sends submit form and can seen be in admin |  Pass |
-| My account | Selecting my account as admin | displays dropdown menu unique to admin apart from profile and logout  |  Pass |
-| Add product | Adding a new product| successfully add new product to products page  |  Pass |
-| Add Product | no image is selected | default image is used |  Pass |
-| As Admin edit product | editing product |  successfully edited the product |  Pass |
-| As Admin Delete product | Deleting product|  successfully remove product |  Pass |
-| Register | Register for an account | selecting Register in my account directs user signup page |  Pass |
-| Register | Registering as a new user | Registering as a new user form works |  Pass |
-| Login | Login to an account | selecting Login in my account directs user to Login page |  Pass |
-| Login | Login to an account | login-in as a new user form works |  Pass |
-| Login as admin| Login to as admin gives access to blog/product management | login-in as a new user form works |  Pass |
-| Logout | message shown | Logging out message shown |  Pass |
+
 
 ## Bugs
 
@@ -663,7 +674,7 @@ Products description inspiration from
 #### Blog content
 
 * [Home edit](https://thehomeedit.com/)
-* [Prettty organized home](https://www.organisedprettyhome.com/organise-kids-toys)
+* [Pretty organized home](https://www.organisedprettyhome.com/organise-kids-toys)
 * [Woman's day](https://www.womansday.com/)
 * [The neat method](https://neatmethod.com/)
 
