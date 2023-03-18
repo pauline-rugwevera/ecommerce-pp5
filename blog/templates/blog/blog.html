@@ -28,7 +28,7 @@
 
                 {% if post.image %}
                 <a href="{% url 'post_detail' post.slug %}">
-                    <img class="card-img-top img-fluid" src="{{ post.image.url  }}" alt="{{ post.title }}">
+                    <img class="card-img-top " height="120px"  src="{{ post.image.url  }}" alt="{{ post.title }}">
                 </a>
                 {% else %}
                 <a href="{% url 'post_detail' post.slug %}">

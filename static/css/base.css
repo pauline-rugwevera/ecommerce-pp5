@@ -5,7 +5,8 @@ html {
 body {
     height: calc(100vh - 164px);
     font-family: 'Lato';
-    color: black;
+    color: #000;
+   
 }
 
 .edit {
@@ -24,14 +25,11 @@ body {
 .hero-image {
     background: url('/static/images/hero.webp') no-repeat center center fixed;
     background-size: cover;
-    height: 75%;
+    height: 80%;
     flex: auto;
     width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
-
 }
 
 .header {
@@ -43,6 +41,11 @@ p {
     font-family: 'Lato', sans-serif;
 }
 
+img{
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+}
 /* from Bulma */
 .icon {
     align-items: center;
@@ -276,12 +279,21 @@ input[name='q']::placeholder {
 }
 
 /* footer */
-.footer {
+footer {
+    width: 100%;
+    display: inline-block;
     width: 100%;
     display: inline-block;
     position: relative;
     padding: 0;
-    border-top: 4px solid #3A98B9;
+    border-top: 4px solid #3A98B9
+   
+}
+.img {
+   
+    width:  100px;
+    height: 250px;
+   
 }
 
 
