@@ -8,6 +8,15 @@ Link to deployed site can be found [Here](https://packandstash.herokuapp.com/)
 ## Showcase
 ![Home page](static/images/homepage.jpg)
 
+
+### Strategy
+* Pack and Stash is a B2C type of business. Due to pressure of life amongst us from work/business to family not talking of pandemics, many of us are now opting for online shopping. Pack and Stash aims to offer flexible online shopping to its customers.
+
+
+
+
+
+
 # UX
 ## User stories
 ## As Admin
@@ -22,7 +31,7 @@ Link to deployed site can be found [Here](https://packandstash.herokuapp.com/)
 * As a site user I can create or edit my account so that I can update my details accordingly
 * As a site user I can login in my account so that I can view my order history
 * As a site user I can search for products so that I can find specific products
-* As a site user I can sort products on criteria such as price and category so that I can I have a method of ordering the 
+* As a site user I can sort products on criteria such as price and category so that I can I have a method of ordering the products
 products as I prefer
 * As a site user I can browse through products so that I can decide what I may be interested in buying
 * As a site user I can look at product details so that I can decide if I want to purchase it
@@ -375,7 +384,58 @@ A facebook page was created to build community from the target market. Facebook 
 | Login as admin| Login to as admin gives access to blog/product management | login-in as a new user form works |  Pass |
 | Logout | message shown | Logging out message shown |  Pass |
 
-## Functionality
+## User story testing
+### Admin
+* As a admin I can manage users' accounts so that I can make any required changes to them if needed
+   > Admin can manage user accounts from admin panels
+* As a admin I can manage products so that I can add , update or delete products when necessary
+   > Admin can add, delete and update products on the site
+* As a admin I can view created orders so that I can full fill the orders or amend if needed
+   > Admin can view orders in admin panel
+* As a Admin I can delete any of comments so that I can remove them if I nolonger feel they are still necessary or needed
+   > Only admin can delete comments 
+* As a Admin I can view messages sent via contact form so that I can act upon them
+   > Admin can view send messages in the admin panel
+* As an admin I can manage the blog content so that I can make amendments if needed
+   > Admin can add, edit or delete blogs via blog management. only accessible to admin
+
+## User story testing
+### User
+* As a site user I can create or edit my account so that I can update my details accordingly
+   > A user can create an account using register and update on my profile
+* As a site user I can login in my account so that I can view my order history
+   > Logged in user can view order history if they made a purchase before
+* As a site user I can search for products so that I can find specific products
+   > I made sure users can search for what they want using search bar
+* As a site user I can sort products on criteria such as price and category so that I can I have a method of ordering the products
+   > I made products to be filtered by price or category for users to choose how they want to view
+products as I prefer
+* As a site user I can browse through products so that I can decide what I may be interested in buying
+   > I made the site such that its easy to browse through all products so they see what to order
+* As a site user I can look at product details so that I can decide if I want to purchase it
+   > Each product has a  detailed description so users understands more of it
+* As a site user I can easily add products I want to purchase to a basket so that I can decide whether to purchase or not
+   > Users can easily add products to bag
+* As a site user I can view the contents of my shopping basket so that I can be able to make any adjustments
+   > User can view bag contents by clicking the bag itself
+* As a site user I can update my bag by adding more or remove products so that I can decide on the number of products I intend to buy
+   > User can update the bag to a quantity they want or remove everything entirely
+* As a site user I can view my order summary so that I can verify it before confirming
+   > From secure checkout, users can verify their order summary before buying
+* As a site user I can checkout securely so that I can I maintain the level of trust on the site
+   > I made sure users have secure checkout when completeing a purchase
+* As a site user I can view paginated posts so that I can select which posts to view
+   > Blog posts are paginated, clear and easy to see so to select which to view
+* As a site user I can view all posts so that I can decide what I may be interested in reading
+   > Users can easily choose which one to read
+* As a site user I can comment to the blog posts so that I can express my opinion to the post
+   > I made the site such that signed in user can comment on blog posts
+* As a site user I can use the contact form so that I can contact the site owners
+  > By using the contact form, user can send messages to the site owners
+* As a site user I can sign up to newsletter so that I can keep updated on the latest news
+  > By going to sign up newsletter on the footer, users can easily sign up to receive latest news.
+
+## Functionality testing
 
 Throughout developing this site, I have been using Chrome, and chrome dev tools to help with debugging issues. Testing responsiveness was done using chrome emulated devices.
 
@@ -532,8 +592,6 @@ I used JSlint to validate javascript found in some apps
 ### Python
 [ CI Python linter ](https://pep8ci.herokuapp.com/) was used to test python code
 
-
-
 ## Bugs
 
 For this project there were so many bugs I encountered from the beginning though some were minor. Some of them I ended up taking them to tutor support whom have been very helpful.
@@ -569,11 +627,6 @@ Solution: In checkout views.py in the checkout function, 2 following lines of co
 
 Contact form resubmission on page refresh. To fix this according to [the solution from stack overflow](https://stackoverflow.com/questions/5823580/django-form-resubmitted-upon-refresh)
 I needed to use a return HttpResponseRedirect,which I added to my view after the form is submitted.
-## Unfixed bug
-
-![](static/images/bug8.jpg)
-
-When searching for an item that isnt available, correct result is displayed however I couldnt place the footer where it belongs on that page. I tried to use the height: calc(vh - px), realized I was having another bug with the sort box after wards. However its something that I will later on have to fix.
 
 # Deployment
 
