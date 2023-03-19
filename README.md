@@ -8,14 +8,8 @@ Link to deployed site can be found [Here](https://packandstash.herokuapp.com/)
 ## Showcase
 ![Home page](static/images/homepage.jpg)
 
-
 ### Strategy
 * Pack and Stash is a B2C type of business. Due to pressure of life amongst us from work/business to family not talking of pandemics, many of us are now opting for online shopping. Pack and Stash aims to offer flexible online shopping to its customers.
-
-
-
-
-
 
 # UX
 ## User stories
@@ -543,8 +537,6 @@ I only have 2 colors black and white throughout the site except the footer borde
 
 </details> 
 
-
-
  <details>
   <summary>Click here for Lighthouse results</summary>
  Desktop
@@ -721,7 +713,9 @@ I then went to create a database to connect to the new created app.
 Products description inspiration from
 
 * [The neat system](https://www.theneatsystem.co.za/)
+
 * [Amazon](https://www.amazon.co.uk/)
+
 * [Ikea](https://www.ikea.com)
 
 #### Blog content
