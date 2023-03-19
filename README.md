@@ -620,6 +620,13 @@ Solution: In checkout views.py in the checkout function, 2 following lines of co
 Contact form resubmission on page refresh. To fix this according to [the solution from stack overflow](https://stackoverflow.com/questions/5823580/django-form-resubmitted-upon-refresh)
 I needed to use a return HttpResponseRedirect,which I added to my view after the form is submitted.
 
+### Bug 6
+Anonymous user not iterable error whereby users not logged in could receive error when checking out, they would not receive a payment confirmation yet the order would have been created behind the scenes. To fix- In checkout success functionin views I added and if statement to check if user is aunthenticated:(  if request.user.is_authenticated) sp to attach the profile to user.
+
+![](static/images/solution.jpg)
+
+
+
 # Deployment
 
 I developed this site on Gitpod, using git for version control. Then deployed to Heroku using the following steps
