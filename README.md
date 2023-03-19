@@ -623,9 +623,7 @@ I needed to use a return HttpResponseRedirect,which I added to my view after the
 ### Bug 6
 Anonymous user not iterable error whereby users not logged in could receive error when checking out, they would not receive a payment confirmation yet the order would have been created behind the scenes. To fix- In checkout success functionin views I added and if statement to check if user is aunthenticated:(  if request.user.is_authenticated) sp to attach the profile to user.
 
-![](static/images/solution.jpg)
-
-
+![](static/images/Screenshot_12.jpg)
 
 # Deployment
 
